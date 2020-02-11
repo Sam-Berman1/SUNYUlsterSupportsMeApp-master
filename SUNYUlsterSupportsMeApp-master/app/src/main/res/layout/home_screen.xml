@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_screen_background">
+
+    <ImageButton
+        android:id="@+id/campusResourceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/campusResourcesButtonDesc"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toTopOf="@+id/officesButton"
+        app:layout_constraintEnd_toStartOf="@+id/officesButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75"
+        app:srcCompat="@drawable/home_building" />
+
+    <TextView
+        android:id="@+id/campusResourceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/campusResourcesButtonDesc"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/colorHomeButtons"
+        app:layout_constraintBottom_toTopOf="@+id/campusLifeButton"
+        app:layout_constraintEnd_toEndOf="@+id/campusResourceButton"
+        app:layout_constraintStart_toStartOf="@+id/campusResourceButton"
+        app:layout_constraintTop_toBottomOf="@+id/campusResourceButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/financialButton"
+        android:layout_width="109dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/financialButtonDesc"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toTopOf="@+id/officesButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75"
+        app:srcCompat="@drawable/home_dollar_sign" />
+
+    <TextView
+        android:id="@+id/financialLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/financialButtonDesc"
+        android:textColor="@color/colorHomeButtons"
+        app:layout_constraintBottom_toTopOf="@+id/officesButton"
+        app:layout_constraintEnd_toEndOf="@+id/financialButton"
+        app:layout_constraintStart_toStartOf="@+id/financialButton"
+        app:layout_constraintTop_toBottomOf="@+id/financialButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/socialMediaButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/socialMediaButtonDesc"
+        android:onClick="onClick"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/financialLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/officesButton"
+        app:layout_constraintTop_toTopOf="@+id/financialButton"
+        app:layout_constraintVertical_bias="0.75"
+        app:srcCompat="@drawable/home_u" />
+
+    <TextView
+        android:id="@+id/socialMediaLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/socialMediaButtonDesc"
+        android:textAlignment="center"
+        android:textColor="@color/colorHomeButtons"
+        app:layout_constraintBottom_toTopOf="@+id/libraryButton"
+        app:layout_constraintEnd_toEndOf="@+id/socialMediaButton"
+        app:layout_constraintStart_toStartOf="@+id/socialMediaButton"
+        app:layout_constraintTop_toBottomOf="@+id/socialMediaButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/campusLifeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/campusLifeButtonDesc"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/officesButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home_team_lift" />
+
+    <TextView
+        android:id="@+id/campusLifeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/campusLifeButtonDesc"
+        android:textAlignment="center"
+        android:textColor="@color/colorHomeButtons"
+        app:layout_constraintBottom_toTopOf="@+id/studentLifeButton"
+        app:layout_constraintEnd_toEndOf="@+id/campusLifeButton"
+        app:layout_constraintStart_toStartOf="@+id/campusLifeButton"
+        app:layout_constraintTop_toBottomOf="@+id/campusLifeButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/officesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/officesButtonDesc"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home_info" />
+
+    <TextView
+        android:id="@+id/officesLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/officesButtonDesc"
+        android:textAlignment="center"
+        android:textColor="@color/colorHomeButtons"
+        app:layout_constraintBottom_toTopOf="@+id/scheduleButton"
+        app:layout_constraintEnd_toEndOf="@+id/officesButton"
+        app:layout_constraintStart_toStartOf="@+id/officesButton"
+        app:layout_constraintTop_toBottomOf="@+id/officesButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/libraryButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/libraryButtonDesc"
+        android:onClick="onClick"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/officesLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/officesButton"
+        app:layout_constraintTop_toTopOf="@+id/officesButton"
+        app:srcCompat="@drawable/home_book" />
+
+    <TextView
+        android:id="@+id/libraryLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/libraryButtonDesc"
+        android:textAlignment="center"
+        android:textColor="@color/colorHomeButtons"
+        app:layout_constraintBottom_toTopOf="@+id/transportationButton"
+        app:layout_constraintEnd_toEndOf="@+id/libraryButton"
+        app:layout_constraintStart_toStartOf="@+id/libraryButton"
+        app:layout_constraintTop_toBottomOf="@+id/libraryButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/studentLifeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/studentLifeButtonDesc"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/officesButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/officesButton"
+        app:layout_constraintVertical_bias="0.256"
+        app:srcCompat="@drawable/home_grad_hat" />
+
+    <TextView
+        android:id="@+id/studentLifeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/studentLifeButtonDesc"
+        android:textAlignment="center"
+        android:textColor="@color/colorHomeButtons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/studentLifeButton"
+        app:layout_constraintStart_toStartOf="@+id/studentLifeButton"
+        app:layout_constraintTop_toBottomOf="@+id/studentLifeButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/scheduleButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/scheduleButtonDesc"
+        android:onClick="onClick"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/studentLifeLabel"
+        app:layout_constraintEnd_toStartOf="@+id/transportationButton"
+        app:layout_constraintStart_toEndOf="@+id/studentLifeButton"
+        app:layout_constraintTop_toTopOf="@+id/studentLifeButton"
+        app:srcCompat="@drawable/home_calendar" />
+
+    <TextView
+        android:id="@+id/scheduleLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/scheduleButtonDesc"
+        android:textAlignment="center"
+        android:textColor="@color/colorHomeButtons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/scheduleButton"
+        app:layout_constraintStart_toStartOf="@+id/scheduleButton"
+        app:layout_constraintTop_toBottomOf="@+id/scheduleButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/transportationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/transportationButtonDesc"
+        android:onClick="onClick"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/officesButton"
+        app:layout_constraintTop_toBottomOf="@+id/officesLabel"
+        app:layout_constraintVertical_bias="0.13999999"
+        app:srcCompat="@drawable/home_bus" />
+
+    <TextView
+        android:id="@+id/transportationLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/transportationButtonDesc"
+        android:textAlignment="center"
+        android:textColor="@color/colorHomeButtons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/transportationButton"
+        app:layout_constraintStart_toStartOf="@+id/transportationButton"
+        app:layout_constraintTop_toBottomOf="@+id/transportationButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/banner_image_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/homeScreenBannerDesc"
+        app:layout_constraintBottom_toTopOf="@+id/financialButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home_banner" />
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="org.sunyulstercs.supportsmeapp.navFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scheduleLabel"
+        tools:layout="@layout/fragment_nav" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlue">#3F51B5</color>
+    <color name="colorBanner">#2d1473</color>
+    <color name="colorMint">#C8E6C9</color>
+    <color name="colorHomeButtons">#ffd783</color>
+    <color name="colorMenuRows">#FFF1D7</color>
+    <color name="colorBackground">#424242</color>
+    <color name="colorTextMenuClicked">#58330a</color>
+	<color name="colorTextDefault">#000000</color>
+    <color name="colorInfoItemButton">#a8c6fa</color>
+</resources>

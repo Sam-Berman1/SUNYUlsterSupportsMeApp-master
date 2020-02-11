@@ -1,0 +1,45 @@
+<resources>
+    <string name="locationButtonDesc">Location</string>
+    <string name="homeButtonDesc">Home</string>
+    <string name="profileButtonDesc">Profile</string>
+    <string name="campusResourcesButtonDesc">Campus Resources</string>
+    <string name="financialButtonDesc">Financial</string>
+    <string name="socialMediaButtonDesc">Social Media</string>
+    <string name="campusLifeButtonDesc">Join and Attend</string>
+    <string name="officesButtonDesc">Important Offices</string>
+    <string name="libraryButtonDesc">Library Tools</string>
+    <string name="studentLifeButtonDesc">Student Life Info</string>
+    <string name="scheduleButtonDesc">Schedule/Class Info</string>
+    <string name="transportationButtonDesc">Transportation Info</string>
+    <string name="homeScreenBannerDesc">SUNY Ulster Banner</string>
+
+    <string name="title_activity_map">Campus Map</string>
+    <string name="title_activity_info">InfoActivity</string>
+    <string name="ulster_desc">SUNY Ulster\\n491 Cottekill Rd, Stone Ridge, NY\\n12484</string>
+    <string name="normal">Normal</string>
+    <string name="hybrid">Hybrid</string>
+    <string name="satellite">Satellite</string>
+    <string name="terrain">Terrain</string>
+    <string name="suny_ulster">SUNY Ulster</string>
+    <string name="hardenbergh">Hardenbergh</string>
+    <string name="burroughs">Burroughs</string>
+    <string name="algonquin">Algonquin</string>
+    <string name="vanderlyn">Vanderlyn</string>
+    <string name="dewitt_library">Dewitt Library</string>
+    <string name="senate_gym">Senate Gym</string>
+    <string-array name="layers_array">
+        <item>@string/normal</item>
+        <item>@string/hybrid</item>
+        <item>@string/satellite</item>
+        <item>@string/terrain</item>
+    </string-array>
+    <string name="map_not_ready">Map is not ready yet</string>
+    <string name="app_name">SUNY Ulster</string>
+    <string name="placeholderText">Placeholder Text</string>
+    <string name="iconText">Icon</string>
+    <string name="moreInfoButtonText">Info</string>
+    <string name="infoLinkButtonText">Website</string>
+    <string name="infoPhoneButtonText">Call</string>
+    <string name="goToCalendarText">Go to Calendar</string>
+    <string name="dateText">Date</string>
+</resources>
