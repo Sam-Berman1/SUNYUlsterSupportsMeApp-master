@@ -8,9 +8,9 @@
     <string name="campusLifeButtonDesc">Join and Attend</string>
     <string name="officesButtonDesc">Important Offices</string>
     <string name="libraryButtonDesc">Library Tools</string>
-    <string name="studentLifeButtonDesc">Student Life Info</string>
-    <string name="scheduleButtonDesc">Schedule/Class Info</string>
-    <string name="transportationButtonDesc">Transportation Info</string>
+    <string name="studentLifeButtonDesc">Student Life</string>
+    <string name="scheduleButtonDesc">Schedule/Class</string>
+    <string name="transportationButtonDesc">Transportation</string>
     <string name="homeScreenBannerDesc">SUNY Ulster Banner</string>
 
     <string name="title_activity_map">Campus Map</string>
