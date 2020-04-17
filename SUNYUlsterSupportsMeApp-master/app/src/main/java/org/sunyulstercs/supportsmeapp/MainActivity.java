@@ -3,11 +3,12 @@ package org.sunyulstercs.supportsmeapp;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 
-import java.util.ArrayList;
-import java.util.Arrays;
+/**
+ * @authors
+ * Ethan Smitty & Sam Berman
+ */
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener
 {
@@ -29,57 +30,56 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 			case R.id.campusResourceButton :
 				//Currently only campus resources category has images
 				intent.putExtra("CategoryData", R.array.resourcesArrayArray);                                           	 //String data
-				intent.putExtra("CategoryImage", R.drawable.home_building);                                              	//Int ID for drawable
+				intent.putExtra("CategoryImage", R.drawable.campus_resources_icon);                                              	//Int ID for drawable
 				intent.putExtra("ActivityName", getResources().getString(R.string.campusResourcesButtonDesc));           											//String data
-				intent.putExtra("DetailIcons", R.array.resourcesIconsArray);                                              //Array of int IDs for drawable
 				intent.putExtra("DetailBanners", R.array.resourcesBannerArray);                                           //Array of int IDs for drawable
 				break;
 
 			case R.id.financialButton :
 				intent.putExtra("CategoryData", R.array.financialArrayArray);
-				intent.putExtra("CategoryImage", R.drawable.home_dollar_sign);
+				intent.putExtra("CategoryImage", R.drawable.financial_icon);
 				intent.putExtra("ActivityName", getResources().getString(R.string.financialButtonDesc));
 				break;
 
-			case R.id.socialMediaButton :
+			case R.id.socialButton :
 				intent.putExtra("CategoryData", R.array.socialArrayArray);
-				intent.putExtra("CategoryImage", R.drawable.home_u);
+				intent.putExtra("CategoryImage", R.drawable.web_social_icon);
 				intent.putExtra("ActivityName", getResources().getString(R.string.socialMediaButtonDesc));
 				break;
 
-			case R.id.campusLifeButton:
+			case R.id.studentLifeButton:
 				intent.putExtra("CategoryData", R.array.campusLifeArrayArray);
-				intent.putExtra("CategoryImage", R.drawable.home_team_lift);
+				intent.putExtra("CategoryImage", R.drawable.student_life_icon);
 				intent.putExtra("ActivityName", getResources().getString(R.string.campusLifeButtonDesc));
 				break;
 
-			case R.id.officesButton :
+			case R.id.communityResourcesButton :
 				intent.putExtra("CategoryData", R.array.officesArrayArray);
-				intent.putExtra("CategoryImage", R.drawable.home_info);
-				intent.putExtra("ActivityName", getResources().getString(R.string.officesButtonDesc));
+				intent.putExtra("CategoryImage", R.drawable.community_resources_icon);
+				intent.putExtra("ActivityName", getResources().getString(R.string.communityResourceButtonDesc));
 				break;
 
-			case R.id.libraryButton :
+			case R.id.libraryResourcesButton :
 				intent.putExtra("CategoryData", R.array.libraryArrayArray);
-				intent.putExtra("CategoryImage", R.drawable.home_book);
+				intent.putExtra("CategoryImage", R.drawable.library_resources_icon);
 				intent.putExtra("ActivityName", getResources().getString(R.string.libraryButtonDesc));
 				break;
 
-			case R.id.studentLifeButton :
+			case R.id.studentSupportButton :
 				intent.putExtra("CategoryData", R.array.studentLifeArrayArray);
-				intent.putExtra("CategoryImage", R.drawable.home_grad_hat);
-				intent.putExtra("ActivityName", getResources().getString(R.string.studentLifeButtonDesc));
+				intent.putExtra("CategoryImage", R.drawable.student_support_icon);
+				intent.putExtra("ActivityName", getResources().getString(R.string.financialAidDesc));
 				break;
 
-			case R.id.scheduleButton :
+			case R.id.academicResourcesButton :
 				intent.putExtra("CategoryData", R.array.scheduleInfoArrayArray);
-				intent.putExtra("CategoryImage", R.drawable.home_calendar);
-				intent.putExtra("ActivityName", getResources().getString(R.string.scheduleButtonDesc));
+				intent.putExtra("CategoryImage", R.drawable.academic_resources_icon);
+				intent.putExtra("ActivityName", getResources().getString(R.string.libraryButtonDesc));
 				break;
 
 			case R.id.transportationButton :
 				intent.putExtra("CategoryData", R.array.transportArrayArray);
-				intent.putExtra("CategoryImage", R.drawable.home_bus);
+				intent.putExtra("CategoryImage", R.drawable.transportation_icon);
 				intent.putExtra("ActivityName", getResources().getString(R.string.transportationButtonDesc));
 				break;
 		}

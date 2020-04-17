@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--Author Sam Berman & Ethan smitty-->
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/coordinatorLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBackground"
+    android:background="#010833"
     tools:context=".InfoActivity">
 
     <ImageView
@@ -15,13 +16,13 @@
         android:layout_marginBottom="8dp"
         android:background="@color/colorBanner"
         android:contentDescription="@string/homeScreenBannerDesc"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/BannerPlaceHolder"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.025"
-        app:srcCompat="@drawable/home_banner" />
+        app:srcCompat="@drawable/ic_yellowbannerwithtext" />
 
     <fragment
         android:id="@+id/nav_fragment"
@@ -37,55 +38,67 @@
         app:layout_constraintVertical_bias="1.0"
         tools:layout="@layout/fragment_nav" />
 
+
+    <ImageView
+        android:id="@+id/BannerPlaceHolder"
+        android:layout_width="500dp"
+        android:layout_height="180dp"
+        app:layout_constraintBottom_toTopOf="@id/department_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/banner_image_view"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/banner_childcare"
+        />
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/info_list_view"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="345dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="32dp"
         android:scrollbars="vertical"
         app:layout_constraintBottom_toTopOf="@+id/nav_fragment"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/banner_image_view"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintVertical_bias="0.0"
+       >
 
     </android.support.v7.widget.RecyclerView>
 
     <ImageView
         android:id="@+id/department_icon"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_width="156dp"
+        android:layout_height="125dp"
+        android:layout_marginBottom="64dp"
         android:adjustViewBounds="false"
         android:contentDescription="@string/placeholderText"
         android:cropToPadding="false"
         android:minWidth="80sp"
-        app:layout_constraintBottom_toTopOf="@+id/nav_fragment"
-        app:layout_constraintEnd_toStartOf="@+id/info_list_view"
+        app:layout_constraintBottom_toTopOf="@+id/categoryLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/banner_image_view"
-        app:layout_constraintVertical_bias="0.049" />
+        android:translationY="-10dp"/>
 
     <TextView
         android:id="@+id/categoryLabel"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
         android:text="@string/placeholderText"
+        android:textSize="30dp"
+        android:fontFamily="@font/robotocondensedbold"
         android:textAlignment="center"
         android:textColor="@color/colorHomeButtons"
-        app:layout_constraintBottom_toTopOf="@+id/nav_fragment"
-        app:layout_constraintEnd_toEndOf="@+id/department_icon"
-        app:layout_constraintStart_toStartOf="@+id/department_icon"
-        app:layout_constraintTop_toBottomOf="@+id/department_icon"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:translationY="-5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/department_icon" />
+
 
 </android.support.constraint.ConstraintLayout>

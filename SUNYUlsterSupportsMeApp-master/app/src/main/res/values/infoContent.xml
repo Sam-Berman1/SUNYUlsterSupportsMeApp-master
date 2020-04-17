@@ -1,37 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Author Sam Berman and Ethan Smitty-->
 <resources xmlns:tools="http://schemas.android.com/tools">
-<!-- This file contains all string resources for the app. Campus Resources section is complete, and should serve as an example for further expansion -->
+<!-- This file contains all string resources for the app. Campus Resources section is complete, and should serve as an example for further expansion
+UPDATE: Are phone numbers and emails accurate? function to pull in alphabetical order-->
 
 
     <!-- Campus Resources -->
-    <string name="srMapTitle">Stone Ridge Campus Map</string>
-    <string name="srMapDesc">Use this tool to find your way around the SUNY Ulster campus located at 491 Cottekill Road, Stone Ridge, NY, 12484</string>
-    <string name="srMapLink" />
-    <string name="srMapPhone" />
-    <string name="srMapEmail" />
-    <string-array name="srMapList">
-        <item>@string/srMapTitle</item>
-        <item>@string/srMapDesc</item>
-        <item>@string/srMapLink</item>
-        <item>@string/srMapPhone</item>
-        <item>@string/srMapEmail</item>
+    <string name="bookstoreTitle">Bookstore</string>
+    <string name="bookstoreDesc">All the supplies needed for classes including textbooks, pens, notebooks, college merchandise, and more.</string>
+    <string name="bookstoreLink">https://www.bkstr.com/sunyulstercountystore/home</string>
+    <string name="bookstorePhone">845–687–5085</string>
+    <string name="bookstoreEmail">sunyulster@bkstr.com</string>
+    <string-array name="bookstoreList">
+        <item>@string/bookstoreTitle</item>
+        <item>@string/bookstoreDesc</item>
+        <item>@string/bookstoreLink</item>
+        <item>@string/bookstorePhone</item>
+        <item>@string/bookstoreEmail</item>
     </string-array>
 
-    <string name="kcMapTitle">Kingston Center Map</string>
-    <string name="kcMapDesc">Use this tool to help find your way around the satellite SUNY Ulster campus located at 94 Marys Ave, Kingston NY, 12401</string>
-    <string name="kcMapLink" />
-    <string name="kcMapPhone" />
-    <string name="kcMapEmail" />
-    <string-array name="kcMapList">
-        <item>@string/kcMapTitle</item>
-        <item>@string/kcMapDesc</item>
-        <item>@string/kcMapLink</item>
-        <item>@string/kcMapPhone</item>
-        <item>@string/kcMapEmail</item>
+    <string name="BoutiqueTitle">Boutique</string>
+    <string name="BoutiqueDesc">This store provides students, faculty, and friends with free clothing and accessories for everyday use, special occasions, interview and work attire.</string>
+    <string name="BoutiqueLink" />
+    <string name="BoutiquePhone" />
+    <string name="BoutiqueEmail" />
+    <string-array name="BoutiqueList">
+        <item>@string/BoutiqueTitle</item>
+        <item>@string/BoutiqueDesc</item>
+        <item>@string/BoutiqueLink</item>
+        <item>@string/BoutiquePhone</item>
+        <item>@string/BoutiqueEmail</item>
     </string-array>
 
     <string name="childcareTitle">Childcare</string>
-    <string name="childcareDesc">The Children’s Center provides high quality and affordable childcare for children of students, faculty and staff, and the local community.</string>
+    <string name="childcareDesc">The Children’s Center provides high quality and affordable child care for children of students, faculty and staff, and the local community.</string>
     <string name="childcareLink">https://www.sunyulster.edu/campus_and_culture/campus_resources/childcare</string>
     <string name="childcarePhone">845–687–5257</string>
     <string name="childcareEmail">childrenscenter@sunyulster.edu</string>
@@ -43,9 +45,22 @@
         <item>@string/childcareEmail</item>
     </string-array>
 
-    <string name="diningTitle">Dining Options</string>
-    <string name="diningDesc">Discover the grub hubs on campus, fully serviced by Lessing’s.</string>
-    <string name="diningLink">https://www.sunyulster.edu/campus_and_culture/campus_resources/dining.php</string>
+    <string name="computerLabTitle">Computer Labs</string>
+    <string name="computerLabDesc">The Stone Ridge campus Computer lab is  on the second floor of Hasbrouck Hall (HAS 220) The Student Lab at the Kingston Center is in room 114.</string>
+    <string name="computerLabLink"/>
+    <string name="computerLabPhone"/>
+    <string name="computerLabEmail"/>
+    <string-array name="computerLabList">
+        <item>@string/computerLabTitle</item>
+        <item>@string/computerLabDesc</item>
+        <item>@string/computerLabLink</item>
+        <item>@string/computerLabPhone</item>
+        <item>@string/computerLabEmail</item>
+    </string-array>
+
+    <string name="diningTitle">Dining </string>
+    <string name="diningDesc">Discover Lessings meal and snack options on campus, check hours of operation, locations, and specials.</string>
+    <string name="diningLink">https://www.sunyulster.edu/student_handbook/food_service.php</string>
     <string name="diningPhone" />
     <string name="diningEmail" />
     <string-array name="diningList">
@@ -56,64 +71,24 @@
         <item>@string/diningEmail</item>
     </string-array>
 
-    <string name="bookstoreTitle">Senator Bookstore</string>
-    <string name="bookstoreDesc">The place to find all the supplies needed for any SUNY Ulster degree; including textbooks, pens, notebooks, college merchandise, and more with staff ready to help you at every turn.\nVanderlyn Hall, 149B</string>
-    <string name="bookstoreLink">http://www.sunyulstershop.com</string>
-    <string name="bookstorePhone">845–687–5085</string>
-    <string name="bookstoreEmail">sunyulster@bkstr.com</string>
-    <string-array name="bookstoreList">
-        <item>@string/bookstoreTitle</item>
-        <item>@string/bookstoreDesc</item>
-        <item>@string/bookstoreLink</item>
-        <item>@string/bookstorePhone</item>
-        <item>@string/bookstoreEmail</item>
+    <string name="emergencyTitle">Emergency Messaging</string>
+    <string name="emergencyDesc">Sign up for SUNY Ulster Alert to receive notifications of weather cancellations and emergencies via email, text message or phone call.</string>
+    <string name="emergencyLink">https://www.getrave.com/loginRedirect.action?selectSchool=true</string>
+    <string name="emergencyPhone"/>
+    <string name="emergencyEmail"/>
+    <string-array name="emergencyList">
+        <item>@string/emergencyTitle</item>
+        <item>@string/emergencyDesc</item>
+        <item>@string/emergencyLink</item>
+        <item>@string/emergencyPhone</item>
+        <item>@string/emergencyEmail</item>
     </string-array>
 
-
-    <string name="counselingTitle">Counseling</string>
-    <string name="counselingDesc">Students can get help from short-term counseling for issues involving mental health, alcohol or substance abuse, careers, and life skills.</string>
-    <string name="counselingLink">https://www.sunyulster.edu/student_handbook/counseling.php</string>
-    <string name="counselingPhone" />
-    <string name="counselingEmail" />
-    <string-array name="counselingList">
-        <item>@string/counselingTitle</item>
-        <item>@string/counselingDesc</item>
-        <item>@string/counselingLink</item>
-        <item>@string/counselingPhone</item>
-        <item>@string/counselingEmail</item>
-    </string-array>
-
-    <string name="freshStartTitle">Fresh Start</string>
-    <string name="freshStartDesc">Apply for the chance to start over at SUNY Ulster after a hiatus from the college (2yr+) with a new GPA.</string>
-    <string name="freshStartLink">https://www.sunyulster.edu/admissions/info/fresh_start_policy.php</string>
-    <string name="freshStartPhone" />
-    <string name="freshStartEmail" />
-    <string-array name="freshStartList">
-        <item>@string/freshStartTitle</item>
-        <item>@string/freshStartDesc</item>
-        <item>@string/freshStartLink</item>
-        <item>@string/freshStartPhone</item>
-        <item>@string/freshStartEmail</item>
-    </string-array>
-
-    <string name="safeSpaceTitle">Safe Space</string>
-    <string name="safeSpaceDesc">Our academic community values and respects diversity among our students, faculty, and staff who are committed to fostering an academic environment where there is zero tolerance for any and all forms of homophobia and everyone is free to express emotional and sexual preferences.</string>
-    <string name="safeSpaceLink">https://www.sunyulster.edu/campus_and_culture/campus_resources/safe_space</string>
-    <string name="safeSpacePhone" />
-    <string name="safeSpaceEmail" />
-    <string-array name="safeSpaceList">
-        <item>@string/safeSpaceTitle</item>
-        <item>@string/safeSpaceDesc</item>
-        <item>@string/safeSpaceLink</item>
-        <item>@string/safeSpacePhone</item>
-        <item>@string/safeSpaceEmail</item>
-    </string-array>
-
-    <string name="foodPantryTitle">Boutique and Food Pantry</string>
-    <string name="foodPantryDesc">Find out when and where you can go on campus to get cost free food and clothing if you need it, no proof needed. Just stop by during open hours!</string>
-    <string name="foodPantryLink" />
-    <string name="foodPantryPhone" />
-    <string name="foodPantryEmail" />
+    <string name="foodPantryTitle">Food Pantry</string>
+    <string name="foodPantryDesc">Food and select personal care items for all SUNY Ulster Students, Faculty, and Staff</string>
+    <string name="foodPantryLink">https://www.sunyulster.edu/campus_and_culture/campus_resources/food-pantry.php</string>
+    <string name="foodPantryPhone"/>
+    <string name="foodPantryEmail"/>
     <string-array name="foodPantryList">
         <item>@string/foodPantryTitle</item>
         <item>@string/foodPantryDesc</item>
@@ -122,21 +97,34 @@
         <item>@string/foodPantryEmail</item>
     </string-array>
 
-    <string name="tutorTitle">Tutoring by Subject (online and in-person)</string>
-    <string name="tutorDesc">Receive any academic help you need with one of our tutors within the college community.   (More info on in person tutoring can be found on the portal, in the student resources tab under the Academic Support Resources banner, click on the learning center.)</string>
-    <string name="tutorLink">https://www.starny.org/tutoring_schedule</string>
-    <string name="tutorPhone" />
-    <string name="tutorEmail" />
-    <string-array name="tutorList">
-        <item>@string/tutorTitle</item>
-        <item>@string/tutorDesc</item>
-        <item>@string/tutorLink</item>
-        <item>@string/tutorPhone</item>
-        <item>@string/tutorEmail</item>
+    <string name="kcMapTitle">Map - Kingston Center</string>
+    <string name="kcMapDesc">Find your way around the Kingston Center of SUNY Ulster located at 94 Mary’s Ave., Kingston NY, 12401 </string>
+    <string name="kcMapLink"> https://www.sunyulster.edu/academics/kcsu/ </string>
+    <string name="kcMapPhone" />
+    <string name="kcMapEmail" />
+    <string-array name="kcMapList">
+        <item>@string/kcMapTitle</item>
+        <item>@string/kcMapDesc</item>
+        <item>@string/kcMapLink</item>
+        <item>@string/kcMapPhone</item>
+        <item>@string/kcMapEmail</item>
     </string-array>
 
-    <string name="nurseTitle">"Health Services"</string>
-    <string name="nurseDesc">"First aid treatment, medical emergency care, blood pressure checks, health information, treatment referrals, onsite clinics and more.\nSEN 103"</string>
+    <string name="srMapTitle">Map - Stone Ridge Campus</string>
+    <string name="srMapDesc">Find your way around the Stone Ridge campus located at 491 Cottekill Road, Stone Ridge, NY, 12484</string>
+    <string name="srMapLink">https://www.sunyulster.edu/campus_and_culture/about_us/src_campus_map.php</string>
+    <string name="srMapPhone" />
+    <string name="srMapEmail" />
+    <string-array name="srMapList">
+        <item>@string/srMapTitle</item>
+        <item>@string/srMapDesc</item>
+        <item>@string/srMapLink</item>
+        <item>@string/srMapPhone</item>
+        <item>@string/srMapEmail</item>
+    </string-array>
+
+    <string name="nurseTitle">Nurse</string>
+    <string name="nurseDesc">First aid treatment, medical emergency care, blood pressure checks, health information, treatment referrals, immunization requirements and onsite clinics. \nSEN 103</string>
     <string name="nurseLink">"https://www.sunyulster.edu/campus_and_culture/campus_resources/health_services"</string>
     <string name="nursePhone">"845–687–5246"</string>
     <string name="nurseEmail" />
@@ -148,11 +136,11 @@
         <item>@string/nurseEmail</item>
     </string-array>
 
-    <string name="portalTitle">Portal</string>
-    <string name="portalDesc">My.SUNYUlster is our Student Information Portal and the school\'s primary means of communicating official College information. The portal is available from anywhere you have Internet access by using your student login.</string>
-    <string name="portalLink">https://gofar.sunyulster.edu</string>
-    <string name="portalPhone" />
-    <string name="portalEmail" />
+    <string name="portalTitle">"Portal &amp; Email Help"</string>
+    <string name="portalDesc">My.sunyulster.edu is our portal where students will find access to email, timely announcements, bills, grades and more. All students should log into the portal and check their email daily.</string>
+    <string name="portalLink">http://my.sunyulster.edu</string>
+    <string name="portalPhone"/>
+    <string name="portalEmail">helpdesk@sunyulster.edu.</string>
     <string-array name="portalList">
         <item>@string/portalTitle</item>
         <item>@string/portalDesc</item>
@@ -162,7 +150,7 @@
     </string-array>
 
     <string name="publicSafetyTitle">Public Safety</string>
-    <string name="publicSafetyDesc">Students, faculty, staff and visitors can feel safe and secure in our close-knit community campus protected by our Office of Public Safety and Security.\nHasbrouck Hall Lobby</string>
+    <string name="publicSafetyDesc">24-hour campus safety patrols plus escort services, lost &amp; found, parking permits, and ID cards.</string>
     <string name="publicSafetyLink">https://www.sunyulster.edu/campus_and_culture/safety_security/</string>
     <string name="publicSafetyPhone">845–687–5053</string>
     <string name="publicSafetyEmail">freerw@sunyulster.edu</string>
@@ -174,27 +162,35 @@
         <item>@string/publicSafetyEmail</item>
     </string-array>
 
+    <string name="veteranTitle">Veterans Affairs</string>
+    <string name="veteranDesc">Any past or present military members  may qualify for special help based on service history. Get a custom plan to succeed.</string>
+    <string name="veteranLink">https://www.sunyulster.edu/student_handbook/veterans_affairs.php</string>
+    <string name="veteranPhone"/>
+    <string name="veteranEmail"/>
+    <string-array name="veteranList">
+        <item>@string/veteranTitle</item>
+        <item>@string/veteranDesc</item>
+        <item>@string/veteranLink</item>
+        <item>@string/veteranPhone</item>
+        <item>@string/veteranEmail</item>
+    </string-array>
+
     <array name="resourcesArrayArray">
         <item>@array/bookstoreList</item>
+        <item>@array/BoutiqueList</item>
         <item>@array/childcareList</item>
         <item>@array/diningList</item>
+        <item> @array/computerLabList</item>
+        <item>@array/emergencyList</item>
+        <item>@array/foodPantryList</item>
+        <item>@array/kcMapList</item>
+        <item>@array/srMapList</item>
         <item>@array/nurseList</item>
         <item>@array/portalList</item>
         <item>@array/publicSafetyList</item>
-        <item>@array/srMapList</item>
-        <item>@array/kcMapList</item>
-	</array>
+        <item>@array/veteranList</item>
 
-	<array name="resourcesIconsArray">
-		<item>@drawable/detail_store</item>
-		<item>@drawable/detail_baby_carriage_solid</item>
-		<item>@drawable/detail_silverware_variant</item>
-		<item>@drawable/detail_medical_bag</item>
-		<item>@drawable/detail_earth</item>
-		<item>@drawable/detail_security</item>
-		<item>@drawable/detail_arrow_expand_all</item>
-		<item>@drawable/detail_map_pin_solid</item>
-	</array>
+    </array>
 
     <array name="resourcesBannerArray">
         <item>@drawable/banner_bookstore</item>
@@ -208,17 +204,30 @@
     </array>
 
     <!-- Financial -->
-    <string name="givingTitle">Giving</string>
-    <string name="givingDesc">Be a contributor to the school’s scholarship fund to help enrolling students in need to create the successful career they need to Start Here, Go Far!</string>
-    <string name="givingLink">https://www.sunyulster.edu/foundation/giving/index.php</string>
-    <string name="givingPhone" />
-    <string name="givingEmail" />
+    <string name="accountTitle">Accounts</string>
+    <string name="accountDesc">View and pay your tuition and fees. Set up a payment plan. See your receipt(s) and what you may owe.</string>
+    <string name="accountLink">https://banssb.sunyulster.edu:9000/PROD/twbkwbis.P_GenMenu?name=bmenu.P_StuMainMnu</string>
+    <string name="accountPhone" />
+    <string name="accountEmail" />
     <string-array name="givingList">
-        <item>@string/givingTitle</item>
-        <item>@string/givingDesc</item>
-        <item>@string/givingLink</item>
-        <item>@string/givingPhone</item>
-        <item>@string/givingEmail</item>
+        <item>@string/accountTitle</item>
+        <item>@string/accountDesc</item>
+        <item>@string/accountLink</item>
+        <item>@string/accountPhone</item>
+        <item>@string/accountEmail</item>
+    </string-array>
+
+    <string name="costCalcTitle">Cost Calculator</string>
+    <string name="costCalcDesc">Our Net Price Calculator will provide you and your family with an early estimate of the financial aid for which you might qualify.</string>
+    <string name="costCalcLink">https://www.suny.edu/howmuch/netpricecalculator.xhtml?embed=n&headerUrl=http://www1.sunyulster.edu/images/net_price_calc_header.jpg&bgColor=%208fa5c6&id=68</string>
+    <string name="costCalcPhone" />
+    <string name="costCalcEmail" />
+    <string-array name="costCalcList">
+        <item>@string/costCalcTitle</item>
+        <item>@string/costCalcDesc</item>
+        <item>@string/costCalcLink</item>
+        <item>@string/costCalcPhone</item>
+        <item>@string/costCalcEmail</item>
     </string-array>
 
     <string name="financialAidTitle">Financial Aid</string>
@@ -234,8 +243,21 @@
         <item>@string/financialAidEmail</item>
     </string-array>
 
-    <string name="scholarshipTitle">Scholarship Opportunities</string>
-    <string name="scholarshipDesc">Apply for one of the many scholarship opportunities presented by the SUNY Ulster Foundation.</string>
+    <string name="paymentPlanTitle">Payment Plans</string>
+    <string name="paymentPlanDesc">Budget your education’s cost by paying it in easy monthly installments throughout that semester of classes.</string>
+    <string name="paymentPlanLink">https://www.sunyulster.edu/admissions/tuition_fees/payment_plan.php</string>
+    <string name="paymentPlanPhone" />
+    <string name="paymentPlanEmail"/>
+    <string-array name="paymentPlanList">
+        <item>@string/paymentPlanTitle</item>
+        <item>@string/paymentPlanDesc</item>
+        <item>@string/paymentPlanLink</item>
+        <item>@string/paymentPlanPhone</item>
+        <item>@string/paymentPlanEmail</item>
+    </string-array>
+
+    <string name="scholarshipTitle">Scholarships</string>
+    <string name="scholarshipDesc">Apply for hundreds of scholarships with one application.</string>
     <string name="scholarshipLink">https://www.sunyulster.edu/foundation/scholarships/applications/index.php</string>
     <string name="scholarshipPhone" />
     <string name="scholarshipEmail" />
@@ -247,69 +269,15 @@
         <item>@string/scholarshipEmail</item>
     </string-array>
 
-    <string name="studentAccountsTitle">My Student Accounts</string>
-    <string name="studentAccountsDesc">View and pay your accounts for tuition and fees. See your receipt(s) and what you may owe.</string>
-    <string name="studentAccountsLink">https://banssb.sunyulster.edu:9000/PROD/twbkwbis.P_GenMenu?name=bmenu.P_StuMainMnu</string>
-    <string name="studentAccountsPhone" />
-    <string name="studentAccountsEmail" />
-    <string-array name="studentAccountsList">
-        <item>@string/studentAccountsTitle</item>
-        <item>@string/studentAccountsDesc</item>
-        <item>@string/studentAccountsLink</item>
-        <item>@string/studentAccountsPhone</item>
-        <item>@string/studentAccountsEmail</item>
-    </string-array>
-
-    <string name="paymentPlanTitle">Payment Plans</string>
-    <string name="paymentPlanDesc">Budget your education’s cost better by paying it in easy monthly installments throughout that semester of classes.</string>
-    <string name="paymentPlanLink">https://www.sunyulster.edu/admissions/tuition_fees/payment_plan.php</string>
-    <string name="paymentPlanPhone" />
-    <string name="paymentPlanEmail" />
-    <string-array name="paymentPlanList">
-        <item>@string/paymentPlanTitle</item>
-        <item>@string/paymentPlanDesc</item>
-        <item>@string/paymentPlanLink</item>
-        <item>@string/paymentPlanPhone</item>
-        <item>@string/paymentPlanEmail</item>
-    </string-array>
-
-    <string name="eopTitle">Educational Opportunity Program</string>
-    <string name="eopDesc">SUNY Ulster\'s Educational Opportunity Program provides academic support and financial aid to students who show promise for mastering college-level work, must be NY state residents.</string>
-    <string name="eopLink">https://www.sunyulster.edu/admissions/educational-opportunity-program/#top</string>
-    <string name="eopPhone" />
-    <string name="eopEmail" />
-    <string-array name="eopList">
-        <item>@string/eopTitle</item>
-        <item>@string/eopDesc</item>
-        <item>@string/eopLink</item>
-        <item>@string/eopPhone</item>
-        <item>@string/eopEmail</item>
-    </string-array>
-
-    <string name="costCalcTitle">Cost Calculator</string>
-    <string name="costCalcDesc">Our Net Price Calculator will provide you and your family with an early estimate of the financial aid for which you might qualify.</string>
-    <string name="costCalcLink">https://www.suny.edu/howmuch/netpricecalculator.xhtml</string>
-    <string name="costCalcPhone" />
-    <string name="costCalcEmail" />
-    <string-array name="costCalcList">
-        <item>@string/costCalcTitle</item>
-        <item>@string/costCalcDesc</item>
-        <item>@string/costCalcLink</item>
-        <item>@string/costCalcPhone</item>
-        <item>@string/costCalcEmail</item>
-    </string-array>
-
     <array name="financialArrayArray">
         <item>@array/givingList</item>
-        <item>@array/financialAidList</item>
-        <item>@array/scholarshipList</item>
-        <item>@array/studentAccountsList</item>
-        <item>@array/paymentPlanList</item>
-        <item>@array/eopList</item>
         <item>@array/costCalcList</item>
+        <item>@array/financialAidList</item>
+        <item>@array/paymentPlanList</item>
+        <item>@array/scholarshipList</item>
     </array>
 
-    <!--Social Media -->
+    <!--Web & Social -->
     <string name="artSiteTitle">Art Website</string>
     <string name="artSiteDesc">Take a look at our thriving arts programs, a rich source of programming for the community.</string>
     <string name="artSiteLink">http://arts.sunyulster.edu/</string>
@@ -633,11 +601,12 @@
 		<item>@string/interlibraryEmail</item>
 	</string-array>
 
-    <string name="buildingHistoryTitle">History of SUNY Ulster Buildings</string>
+    <string name="buildingHistoryTitle">History of SUNY Ulster Buildings</string> <!--  The library has a wall where the names for all the buildings are
+                                                                                        explained and justified. This might be a cool feature to get some more positive
+                                                                                         moral and have users consume more time on the app. -->
     <string-array name="buildingHistoryList">
         <item>@string/buildingHistoryTitle</item>
     </string-array>
-
     <array name="libraryArrayArray">
         <item>@array/loanedBooksList</item>
         <item>@array/hoursList</item>
@@ -719,80 +688,6 @@
         <item>@array/handbookList</item>
         <item>@array/campusNewsList</item>
         <item>@array/majorList</item>
-    </array>
-
-    <!-- Schedule/Class home_info-->
-    <string name="catalogTitle">College Catalog</string>
-    <string name="catalogDesc">See the upcoming classes that you can take at SUNY Ulster.</string>
-    <string name="catalogLink">http://catalog.sunyulster.edu/</string>
-	<string name="catalogPhone" />
-	<string name="catalogEmail" />
-	<string-array name="catalogList">
-		<item>@string/catalogTitle</item>
-		<item>@string/catalogDesc</item>
-		<item>@string/catalogLink</item>
-		<item>@string/catalogPhone</item>
-		<item>@string/catalogEmail</item>
-	</string-array>
-
-    <string name="testingCalendarTitle">Student Testing Calendar</string>
-    <string name="testingCalendarDesc">Find out when and where your midterms and final testings will be held here.</string>
-	<string name="testingCalendarLink" />
-	<string name="testingCalendarPhone" />
-	<string name="testingCalendarEmail" />
-	<string-array name="testingCalendarList">
-		<item>@string/testingCalendarTitle</item>
-		<item>@string/testingCalendarDesc</item>
-		<item>@string/testingCalendarLink</item>
-		<item>@string/testingCalendarPhone</item>
-		<item>@string/testingCalendarEmail</item>
-	</string-array>
-
-    <string name="scheduleTitle">My Semester Schedule</string>
-    <string name="scheduleDesc">What classes are you taking on what day and where? Don’t worry, you can always find out here.</string>
-	<string name="scheduleLink" />
-	<string name="schedulePhone" />
-	<string name="scheduleEmail" />
-	<string-array name="scheduleList">
-		<item>@string/scheduleTitle</item>
-		<item>@string/scheduleDesc</item>
-		<item>@string/scheduleLink</item>
-		<item>@string/schedulePhone</item>
-		<item>@string/scheduleEmail</item>
-	</string-array>
-
-    <string name="internshipsTitle">Internships</string>
-    <string name="internshipsDesc">The edge you need to be set above all the rest, practical work experience in your chosen field. Take a look at some of the impressive placements students have gotten from a SUNY Ulster internship.</string>
-    <string name="internshipsLink">https://www.sunyulster.edu/academics/achieve_more/</string>
-	<string name="internshipsPhone" />
-	<string name="internshipsEmail" />
-	<string-array name="internshipsList">
-		<item>@string/internshipsTitle</item>
-		<item>@string/internshipsDesc</item>
-		<item>@string/internshipsLink</item>
-		<item>@string/internshipsPhone</item>
-		<item>@string/internshipsEmail</item>
-	</string-array>
-
-    <string name="transcriptsTitle">Transcripts</string>
-    <string name="transcriptsDesc">View your unofficial transcript and request an official version from the Registrar with this feature.</string>
-    <string name="transcriptsLink">https://www.sunyulster.edu/admissions/forms/index#transcripts</string>
-	<string name="transcriptsPhone" />
-	<string name="transcriptsEmail" />
-	<string-array name="transcriptsList">
-		<item>@string/transcriptsTitle</item>
-		<item>@string/transcriptsDesc</item>
-		<item>@string/transcriptsLink</item>
-		<item>@string/transcriptsPhone</item>
-		<item>@string/transcriptsEmail</item>
-	</string-array>
-
-    <array name="scheduleInfoArrayArray">
-        <item>@array/catalogList</item>
-        <item>@array/testingCalendarList</item>
-        <item>@array/scheduleList</item>
-        <item>@array/internshipsList</item>
-        <item>@array/transcriptsList</item>
     </array>
 
     <!--Transportation Info-->

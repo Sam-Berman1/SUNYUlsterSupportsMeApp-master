@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--Author Sam Berman & Ethan Smitty-->
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/home_screen_background">
+    android:background="#010833">
 
     <ImageButton
         android:id="@+id/campusResourceButton"
@@ -17,184 +18,93 @@
         android:background="@android:color/transparent"
         android:contentDescription="@string/campusResourcesButtonDesc"
         android:onClick="onClick"
-        app:layout_constraintBottom_toTopOf="@+id/officesButton"
-        app:layout_constraintEnd_toStartOf="@+id/officesButton"
+        app:layout_constraintBottom_toTopOf="@+id/communityResourcesButton"
+        app:layout_constraintEnd_toStartOf="@+id/communityResourcesButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.75"
-        app:srcCompat="@drawable/home_building" />
+        app:srcCompat="@drawable/campus_resources_icon"/>
 
     <TextView
         android:id="@+id/campusResourceLabel"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="32dp"
         android:text="@string/campusResourcesButtonDesc"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="@color/colorHomeButtons"
-        app:layout_constraintBottom_toTopOf="@+id/campusLifeButton"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/studentLifeButton"
         app:layout_constraintEnd_toEndOf="@+id/campusResourceButton"
+        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="@+id/campusResourceButton"
         app:layout_constraintTop_toBottomOf="@+id/campusResourceButton"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/student_life_icon" />
 
     <ImageButton
-        android:id="@+id/financialButton"
-        android:layout_width="109dp"
+        android:id="@+id/academicResourcesButton"
+        android:layout_width="108dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="@android:color/transparent"
         android:contentDescription="@string/financialButtonDesc"
         android:onClick="onClick"
-        app:layout_constraintBottom_toTopOf="@+id/officesButton"
+        app:layout_constraintBottom_toTopOf="@+id/communityResourcesButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.75"
-        app:srcCompat="@drawable/home_dollar_sign" />
+        app:srcCompat="@drawable/academic_resources_icon" />
 
     <TextView
-        android:id="@+id/financialLabel"
+        android:id="@+id/academicResourcesLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
-        android:text="@string/financialButtonDesc"
+        android:text="@string/academicResourcesButtonDesc"
         android:textColor="@color/colorHomeButtons"
-        app:layout_constraintBottom_toTopOf="@+id/officesButton"
-        app:layout_constraintEnd_toEndOf="@+id/financialButton"
-        app:layout_constraintStart_toStartOf="@+id/financialButton"
-        app:layout_constraintTop_toBottomOf="@+id/financialButton"
+        app:layout_constraintBottom_toTopOf="@+id/communityResourcesButton"
+        app:layout_constraintEnd_toEndOf="@+id/academicResourcesButton"
+        app:layout_constraintStart_toStartOf="@+id/academicResourcesButton"
+        app:layout_constraintTop_toBottomOf="@+id/academicResourcesButton"
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageButton
-        android:id="@+id/socialMediaButton"
+        android:id="@+id/studentSupportButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
         android:layout_marginEnd="8dp"
         android:background="@android:color/transparent"
         android:contentDescription="@string/socialMediaButtonDesc"
         android:onClick="onClick"
         android:scaleType="centerInside"
-        app:layout_constraintBottom_toTopOf="@+id/financialLabel"
+        app:layout_constraintBottom_toTopOf="@+id/academicResourcesLabel"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/officesButton"
-        app:layout_constraintTop_toTopOf="@+id/financialButton"
+        app:layout_constraintStart_toEndOf="@+id/communityResourcesButton"
+        app:layout_constraintTop_toTopOf="@+id/academicResourcesButton"
         app:layout_constraintVertical_bias="0.75"
-        app:srcCompat="@drawable/home_u" />
+        app:srcCompat="@drawable/student_support_icon" />
 
     <TextView
-        android:id="@+id/socialMediaLabel"
+        android:id="@+id/studentSupportLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:text="@string/socialMediaButtonDesc"
-        android:textAlignment="center"
-        android:textColor="@color/colorHomeButtons"
-        app:layout_constraintBottom_toTopOf="@+id/libraryButton"
-        app:layout_constraintEnd_toEndOf="@+id/socialMediaButton"
-        app:layout_constraintStart_toStartOf="@+id/socialMediaButton"
-        app:layout_constraintTop_toBottomOf="@+id/socialMediaButton"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <ImageButton
-        android:id="@+id/campusLifeButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@android:color/transparent"
-        android:contentDescription="@string/campusLifeButtonDesc"
-        android:onClick="onClick"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/officesButton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/home_team_lift" />
-
-    <TextView
-        android:id="@+id/campusLifeLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="11dp"
-        android:layout_marginBottom="8dp"
-        android:text="@string/campusLifeButtonDesc"
-        android:textAlignment="center"
-        android:textColor="@color/colorHomeButtons"
-        app:layout_constraintBottom_toTopOf="@+id/studentLifeButton"
-        app:layout_constraintEnd_toEndOf="@+id/campusLifeButton"
-        app:layout_constraintStart_toStartOf="@+id/campusLifeButton"
-        app:layout_constraintTop_toBottomOf="@+id/campusLifeButton"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <ImageButton
-        android:id="@+id/officesButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@android:color/transparent"
-        android:contentDescription="@string/officesButtonDesc"
-        android:onClick="onClick"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/home_info" />
-
-    <TextView
-        android:id="@+id/officesLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:text="@string/officesButtonDesc"
-        android:textAlignment="center"
-        android:textColor="@color/colorHomeButtons"
-        app:layout_constraintBottom_toTopOf="@+id/scheduleButton"
-        app:layout_constraintEnd_toEndOf="@+id/officesButton"
-        app:layout_constraintStart_toStartOf="@+id/officesButton"
-        app:layout_constraintTop_toBottomOf="@+id/officesButton"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <ImageButton
-        android:id="@+id/libraryButton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:background="@android:color/transparent"
-        android:contentDescription="@string/libraryButtonDesc"
-        android:onClick="onClick"
-        android:scaleType="centerInside"
-        app:layout_constraintBottom_toTopOf="@+id/officesLabel"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/officesButton"
-        app:layout_constraintTop_toTopOf="@+id/officesButton"
-        app:srcCompat="@drawable/home_book" />
-
-    <TextView
-        android:id="@+id/libraryLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:text="@string/libraryButtonDesc"
+        android:text="@string/studentSupportButtonDesc"
         android:textAlignment="center"
         android:textColor="@color/colorHomeButtons"
         app:layout_constraintBottom_toTopOf="@+id/transportationButton"
-        app:layout_constraintEnd_toEndOf="@+id/libraryButton"
-        app:layout_constraintStart_toStartOf="@+id/libraryButton"
-        app:layout_constraintTop_toBottomOf="@+id/libraryButton"
+        app:layout_constraintEnd_toEndOf="@+id/studentSupportButton"
+        app:layout_constraintStart_toStartOf="@+id/studentSupportButton"
+        app:layout_constraintTop_toBottomOf="@+id/studentSupportButton"
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageButton
@@ -206,62 +116,152 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="@android:color/transparent"
-        android:contentDescription="@string/studentLifeButtonDesc"
+        android:contentDescription="@string/campusLifeButtonDesc"
         android:onClick="onClick"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/officesButton"
+        app:layout_constraintEnd_toStartOf="@+id/communityResourcesButton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/officesButton"
-        app:layout_constraintVertical_bias="0.256"
-        app:srcCompat="@drawable/home_grad_hat" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/student_life_icon" />
 
     <TextView
         android:id="@+id/studentLifeLabel"
         android:layout_width="wrap_content"
-        android:layout_height="20dp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:text="@string/studentLifeButtonDesc"
+        android:text="@string/campusLifeButtonDesc"
         android:textAlignment="center"
         android:textColor="@color/colorHomeButtons"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/financialButton"
         app:layout_constraintEnd_toEndOf="@+id/studentLifeButton"
         app:layout_constraintStart_toStartOf="@+id/studentLifeButton"
         app:layout_constraintTop_toBottomOf="@+id/studentLifeButton"
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageButton
-        android:id="@+id/scheduleButton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:id="@+id/communityResourcesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:background="@android:color/transparent"
-        android:contentDescription="@string/scheduleButtonDesc"
+        android:contentDescription="@string/placeholderText"
         android:onClick="onClick"
-        android:scaleType="centerInside"
-        app:layout_constraintBottom_toTopOf="@+id/studentLifeLabel"
-        app:layout_constraintEnd_toStartOf="@+id/transportationButton"
-        app:layout_constraintStart_toEndOf="@+id/studentLifeButton"
-        app:layout_constraintTop_toTopOf="@+id/studentLifeButton"
-        app:srcCompat="@drawable/home_calendar" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/community_resources_icon" />
 
     <TextView
-        android:id="@+id/scheduleLabel"
-        android:layout_width="0dp"
+        android:id="@+id/communityResourcesLabel"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:text="@string/scheduleButtonDesc"
+        android:text="@string/communityResourceButtonDesc"
         android:textAlignment="center"
         android:textColor="@color/colorHomeButtons"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/scheduleButton"
-        app:layout_constraintStart_toStartOf="@+id/scheduleButton"
-        app:layout_constraintTop_toBottomOf="@+id/scheduleButton"
+        app:layout_constraintBottom_toTopOf="@+id/libraryResourcesButton"
+        app:layout_constraintEnd_toEndOf="@+id/communityResourcesButton"
+        app:layout_constraintStart_toStartOf="@+id/communityResourcesButton"
+        app:layout_constraintTop_toBottomOf="@+id/communityResourcesButton"
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageButton
         android:id="@+id/transportationButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/libraryButtonDesc"
+        android:onClick="onClick"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/communityResourcesLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/communityResourcesButton"
+        app:layout_constraintTop_toTopOf="@+id/communityResourcesButton"
+        app:srcCompat="@drawable/transportation_icon" />
+
+    <TextView
+        android:id="@+id/transportationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/transportationButtonDesc"
+        android:textAlignment="center"
+        android:textColor="@color/colorHomeButtons"
+        app:layout_constraintBottom_toTopOf="@+id/socialButton"
+        app:layout_constraintEnd_toEndOf="@+id/transportationButton"
+        app:layout_constraintStart_toStartOf="@+id/transportationButton"
+        app:layout_constraintTop_toBottomOf="@+id/transportationButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/financialButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/financialButtonDesc"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/communityResourcesButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/communityResourcesButton"
+        app:layout_constraintVertical_bias="0.256"
+        app:srcCompat="@drawable/financial_icon" />
+
+    <TextView
+        android:id="@+id/financialLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/financialButtonDesc"
+        android:textAlignment="center"
+        android:textColor="@color/colorHomeButtons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/financialButton"
+        app:layout_constraintStart_toStartOf="@+id/financialButton"
+        app:layout_constraintTop_toBottomOf="@+id/financialButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/libraryResourcesButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/placeholderText"
+        android:onClick="onClick"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/financialLabel"
+        app:layout_constraintEnd_toStartOf="@+id/socialButton"
+        app:layout_constraintStart_toEndOf="@+id/financialButton"
+        app:layout_constraintTop_toTopOf="@+id/financialButton"
+        app:srcCompat="@drawable/library_resources_icon" />
+
+    <TextView
+        android:id="@+id/libraryResourcesLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/libraryButtonDesc"
+        android:textAlignment="center"
+        android:textColor="@color/colorHomeButtons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/libraryResourcesButton"
+        app:layout_constraintStart_toStartOf="@+id/libraryResourcesButton"
+        app:layout_constraintTop_toBottomOf="@+id/libraryResourcesButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/socialButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -274,23 +274,24 @@
         android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/officesButton"
-        app:layout_constraintTop_toBottomOf="@+id/officesLabel"
-        app:layout_constraintVertical_bias="0.13999999"
-        app:srcCompat="@drawable/home_bus" />
+        app:layout_constraintHorizontal_bias="0.703"
+        app:layout_constraintStart_toEndOf="@+id/communityResourcesButton"
+        app:layout_constraintTop_toBottomOf="@+id/communityResourcesLabel"
+        app:layout_constraintVertical_bias="0.136"
+        app:srcCompat="@drawable/web_social_icon" />
 
     <TextView
-        android:id="@+id/transportationLabel"
-        android:layout_width="0dp"
+        android:id="@+id/socialLabel"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:text="@string/transportationButtonDesc"
+        android:text="@string/socialMediaButtonDesc"
         android:textAlignment="center"
         android:textColor="@color/colorHomeButtons"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/transportationButton"
-        app:layout_constraintStart_toStartOf="@+id/transportationButton"
-        app:layout_constraintTop_toBottomOf="@+id/transportationButton"
+        app:layout_constraintEnd_toEndOf="@+id/socialButton"
+        app:layout_constraintStart_toStartOf="@+id/socialButton"
+        app:layout_constraintTop_toBottomOf="@+id/socialButton"
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
@@ -298,22 +299,24 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:contentDescription="@string/homeScreenBannerDesc"
-        app:layout_constraintBottom_toTopOf="@+id/financialButton"
+        app:layout_constraintBottom_toTopOf="@+id/academicResourcesButton"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/home_banner" />
+        app:layout_constraintVertical_bias="0.545"
+        app:srcCompat="@drawable/ic_yellowbannerwithtext" />
 
     <fragment
         android:id="@+id/fragment"
         android:name="org.sunyulstercs.supportsmeapp.navFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scheduleLabel"
+        app:layout_constraintTop_toBottomOf="@+id/libraryResourcesLabel"
         tools:layout="@layout/fragment_nav" />
 
 </android.support.constraint.ConstraintLayout>

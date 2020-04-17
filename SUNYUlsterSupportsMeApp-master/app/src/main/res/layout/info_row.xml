@@ -2,42 +2,33 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="100dp"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
     android:orientation="horizontal"
     android:weightSum="4.0">
 
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/info_row_cl"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/menu_item_background">
+        android:layout_width="415dp"
+        android:layout_height="50dp"
+        android:background="#010833">
 
         <TextView
             android:id="@+id/info_title"
-            android:layout_width="0dp"
+            android:layout_width="415dp"
             android:layout_height="40sp"
-            android:layout_marginStart="40dp"
+            android:textSize="20dp"
             android:gravity="center_vertical|start"
-            android:textAlignment="textStart"
+            android:textAlignment="gravity"
             android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
-            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Hello" />
+            tools:text="This is text for info row L2" />
 
-        <ImageView
-            android:id="@+id/info_item_image"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:contentDescription="@string/iconText"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/info_title"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
     </android.support.constraint.ConstraintLayout>
 
 </LinearLayout>

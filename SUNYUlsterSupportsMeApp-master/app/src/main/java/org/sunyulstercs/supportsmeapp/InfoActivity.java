@@ -75,15 +75,6 @@ public class InfoActivity extends AppCompatActivity
 
                 InfoItem newItem = new InfoItem(catData[i]);
 
-                if (extras.containsKey("DetailIcons")) //if L2 thumbnails exist for this set
-                {
-                    TypedArray icons = getResources().obtainTypedArray(extras.getInt("DetailIcons"));
-                    if (icons.length() > i)
-                    {
-                        newItem.setIconID(icons.getResourceId(i, 0));
-                    }
-                    icons.recycle();
-                }
                 if (extras.containsKey("DetailBanners")) //if L3 banners exist for this set
                 {
                     TypedArray banners = getResources().obtainTypedArray(extras.getInt("DetailBanners"));

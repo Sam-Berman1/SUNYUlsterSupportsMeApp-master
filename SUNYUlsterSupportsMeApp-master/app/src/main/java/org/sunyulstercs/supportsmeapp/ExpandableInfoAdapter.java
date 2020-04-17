@@ -46,9 +46,6 @@ public class ExpandableInfoAdapter extends ExpandableRecyclerViewAdapter<Expanda
     public void onBindGroupViewHolder(ExpandableInfoViewHolder holder, int flatPosition, ExpandableGroup group) {
         holder.setInfoTitle(group.getTitle());
         InfoItem info = (InfoItem) group.getItems().get(0);
-        if (info.hasIconID()) //if an icon exists, set it in the imageview
-        {
-            holder.setInfoIcon(context.getDrawable(info.getIconID()));
-        }
+
     }
 }

@@ -30,7 +30,7 @@ class ExpandableDetailViewHolder extends ChildViewHolder
 
         moreInfoButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v) { //L3
                 Intent intent = new Intent(v.getContext(), DetailActivity.class);
                 intent.putExtra("InfoItem", info);
                 v.getContext().startActivity(intent);
