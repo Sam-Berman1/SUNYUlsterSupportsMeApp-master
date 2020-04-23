@@ -189,7 +189,6 @@ UPDATE: Are phone numbers and emails accurate? function to pull in alphabetical 
         <item>@array/portalList</item>
         <item>@array/publicSafetyList</item>
         <item>@array/veteranList</item>
-
     </array>
 
     <array name="resourcesBannerArray">
@@ -202,6 +201,8 @@ UPDATE: Are phone numbers and emails accurate? function to pull in alphabetical 
         <item>@drawable/banner_campusmap_src</item>
         <item>@drawable/banner_campusmap_kcsu</item>
     </array>
+
+
 
     <!-- Financial -->
     <string name="accountTitle">Accounts</string>
@@ -219,7 +220,7 @@ UPDATE: Are phone numbers and emails accurate? function to pull in alphabetical 
 
     <string name="costCalcTitle">Cost Calculator</string>
     <string name="costCalcDesc">Our Net Price Calculator will provide you and your family with an early estimate of the financial aid for which you might qualify.</string>
-    <string name="costCalcLink">https://www.suny.edu/howmuch/netpricecalculator.xhtml?embed=n&headerUrl=http://www1.sunyulster.edu/images/net_price_calc_header.jpg&bgColor=%208fa5c6&id=68</string>
+    <string name="costCalcLink">https://www.suny.edu/howmuch/netpricecalculator.xhtml?embed=n&amp;headerUrl=http://www1.sunyulster.edu/images/net_price_calc_header.jpg&amp;bgColor=%208fa5c6&amp;id=68</string>
     <string name="costCalcPhone" />
     <string name="costCalcEmail" />
     <string-array name="costCalcList">
@@ -291,18 +292,18 @@ UPDATE: Are phone numbers and emails accurate? function to pull in alphabetical 
         <item>@string/artSiteEmail</item>
     </string-array>
 
-    <string name="athleticsTitle">Athletics Website</string>
-    <string name="athleticsDesc">Looking to join a sports team, or to just come rally for and support our Senators? This is the right place to look!</string>
-    <string name="athleticsLink">https://athletics.sunyulster.edu/</string>
-    <string name="athleticsPhone" />
-    <string name="athleticsEmail" />
-    <string-array name="athleticsList">
-        <item>@string/athleticsTitle</item>
-        <item>@string/athleticsDesc</item>
-        <item>@string/athleticsLink</item>
-        <item>@string/athleticsPhone</item>
-        <item>@string/athleticsEmail</item>
-    </string-array>
+<!--    <string name="athleticsTitle">Athletics Website</string>-->
+<!--    <string name="athleticsDesc">Looking to join a sports team, or to just come rally for and support our Senators? This is the right place to look!</string>-->
+<!--    <string name="athleticsLink">https://athletics.sunyulster.edu/</string>-->
+<!--    <string name="athleticsPhone" />-->
+<!--    <string name="athleticsEmail" />-->
+<!--    <string-array name="athleticsList">-->
+<!--        <item>@string/athleticsTitle</item>-->
+<!--        <item>@string/athleticsDesc</item>-->
+<!--        <item>@string/athleticsLink</item>-->
+<!--        <item>@string/athleticsPhone</item>-->
+<!--        <item>@string/athleticsEmail</item>-->
+<!--    </string-array>-->
 
     <string name="facebookTitle">Facebook</string>
     <string name="facebookLink">https://www.facebook.com/sunyulster/</string>
@@ -357,7 +358,35 @@ UPDATE: Are phone numbers and emails accurate? function to pull in alphabetical 
         <item>@array/blogList</item>
     </array>
 
-    <!--Get Involved on Campus-->
+    <!--Student Life info-->
+    <string name="artTitle">Arts Timeline</string>
+    <string name="artDesc">Take a look at the history of visual artists, musicians, writers, and other creatives that visit our campus each semester.</string>
+    <string name="artLink">http://arts.sunyulster.edu/ </string>
+    <string name="artPhone" />
+    <string name="artEmail" />
+    <string-array name="artList">
+        <item>@string/artTitle</item>
+        <item>@string/artDesc</item>
+        <item>@string/artLink</item>
+        <item>@string/artPhone</item>
+        <item>@string/artEmail</item>
+    </string-array>
+
+    <string name="athleticsTitle">Athletics Website</string>
+    <string name="athleticsDesc">Looking to join a sports team, or to just come rally for and support our Senators? This is the right place to look!</string>
+    <string name="athleticsLink">https://athletics.sunyulster.edu/</string>
+    <string name="athleticsPhone" />
+    <string name="athleticsEmail" />
+    <string-array name="athleticsList">
+        <item>@string/artTitle</item>
+        <item>@string/artDesc</item>
+        <item>@string/artLink</item>
+        <item>@string/artPhone</item>
+        <item>@string/artEmail</item>
+    </string-array>
+
+
+
     <string name="clubsTitle">Clubs</string>
     <string name="clubsDesc">Pick your passion and join the club! Clubs are formed around all kinds of concepts and subjects, if you don’t see one you like, start your own club at SUNY Ulster.</string>
     <string name="clubsLink">https://www.sunyulster.edu/campus_and_culture/clubs/</string>
@@ -410,18 +439,6 @@ UPDATE: Are phone numbers and emails accurate? function to pull in alphabetical 
         <item>@string/honorsEmail</item>
     </string-array>
 
-    <string name="coilTitle">Study with students abroad by COIL</string>
-    <string name="coilDesc">COIL allows students to work with counterparts across the world on a number of subjects through technological resources.</string>
-    <string name="coilLink">https://www.sunyulster.edu/academics/going_global/coil.php</string>
-    <string name="coilPhone" />
-    <string name="coilEmail" />
-    <string-array name="coilList">
-        <item>@string/coilTitle</item>
-        <item>@string/coilDesc</item>
-        <item>@string/coilLink</item>
-        <item>@string/coilPhone</item>
-        <item>@string/coilEmail</item>
-    </string-array>
 
     <string name="diversityTitle">Diversity</string>
     <string name="diversityDesc">Join other students in diversity celebrations across campus throughout the semester. SUNY Ulster is proud to maintain a welcoming environment to everyone.</string>
@@ -449,22 +466,221 @@ UPDATE: Are phone numbers and emails accurate? function to pull in alphabetical 
         <item>@string/weeklyCampusEmail</item>
     </string-array>
 
-    <array name="campusLifeArrayArray">
+    <array name="studentLifeArrayArray">
         <item>@array/clubsList</item>
         <item>@array/studentGovList</item>
         <item>@array/eventCalendarList</item>
-        <item>@array/athleticsList</item>
+<!--        <item>@array/athleticsList</item>-->
         <item>@array/honorsList</item>
         <item>@array/coilList</item>
         <item>@array/diversityList</item>
         <item>@array/weeklyCampusList</item>
     </array>
 
-    <!--Offices -->
+    <!-- Community Resouces info -->
+
+    <string name="UCOFATitle">Ulster County Office for the Aging</string>
+    <string name="UCOFADesc">Services to assist Ulster County seniors to be as independent as possible, for as long as possible.</string>
+    <string name="UCOFALink">https://ulstercountyny.gov/aging/</string>
+    <string name="UCOFAPhone" />
+    <string name="UCOFAEmail" />
+    <string-array name="UCOFAList">
+        <item>@string/UCOFATitle</item>
+        <item>@string/UCOFADesc</item>
+        <item>@string/UCOFALink</item>
+        <item>@string/UCOFAPhone</item>
+        <item>@string/UCOFAEmail</item>
+    </string-array>
+
+    <string name="RUPCOTitle">RUPCO</string>
+    <string name="RUPCODesc">Creating opportunities for quality, healthy and sustainable housing at an affordable price</string>
+    <string name="RUPCOLink">https://rupco.org/</string>
+    <string name="RUPCOPhone"/>
+    <string name="RUPCOEmail"/>
+    <string-array name="RUPCOList">
+        <item>@string/RUPCOTitle</item>
+        <item>@string/RUPCODesc</item>
+        <item>@string/RUPCOLink</item>
+        <item>@string/RUPCOPhone</item>
+        <item>@string/RUPCOEmail</item>
+    </string-array>
+
+    <string name="careerCenterTitle">Ulster County Career Center </string>
+    <string name="careerCenterDesc">Provide job seekers services to facilitate their efforts to find employment, training, and the tools to maximize their potential in their search for employment in Ulster county.</string>
+    <string name="careerCenterLink">https://www.ulsterworks.com/</string>
+    <string name="careerCenterPhone"/>
+    <string name="careerCenterEmail"/>
+    <string-array name="careerCenterList">
+        <item>@string/careerCenterTitle</item>
+        <item>@string/careerCenterDesc</item>
+        <item>@string/careerCenterLink</item>
+        <item>@string/careerCenterPhone</item>
+        <item>@string/careerCenterEmail</item>
+
+    </string-array>
+    <string name="ssTitle">Ulster County Social Services </string>
+    <string name="ssDesc">serve, assist and protect individuals and families who are vulnerable or in need</string>
+    <string name="ssLink"> https://ulstercountyny.gov/social-services</string>
+    <string name="ssPhone"/>
+    <string name="ssEmail"/>
+    <string-array name="ssList">
+        <item>@string/ssTitle</item>
+        <item>@string/ssDesc</item>
+        <item>@string/ssLink</item>
+        <item>@string/ssPhone</item>
+        <item>@string/ssEmail</item>
+    </string-array>
+
+    <string name="UCHealthTitle">Ulster County Department of Health &amp; Mental Health </string>
+    <string name="UCHealthDesc">To prevent illness and ensure their physical, psychological and emotional well–being.</string>
+    <string name="UCHealthLink">https://ulstercountyny.gov/health/health-mental-health</string>
+    <string name="UCHealthPhone"/>
+    <string name="UCHealthEmail"/>
+    <string-array name="UCHealthList">
+    <item>@string/UCHealthTitle</item>
+    <item>@string/UCHealthDesc</item>
+    <item>@string/UCHealthLink</item>
+    <item>@string/UCHealthPhone</item>
+    <item>@string/UCHealthEmail</item>
+    </string-array>
+
+    <string name="preventionTitle">Suicide Prevention</string>
+    <string name="preventionDesc">Preventing suicide is a challenge that requires the entire community\'s active engagement and participation. Anyone, at any time, can be at risk of suicide.</string>
+    <string name="preventionLink">https://ulstercountyny.gov/health/ulster-county-suicide-prevention-education-and-awareness-committee</string>
+    <string name="preventionPhone">18002738255</string>
+    <string name="preventionEmail"/>
+    <string-array name="preventionList">
+        <item>@string/preventionTitle</item>
+        <item>@string/preventionDesc</item>
+        <item>@string/preventionLink</item>
+        <item>@string/preventionPhone</item>
+        <item>@string/preventionEmail</item>
+    </string-array>
+
+    <string name="substanceAbuseTitle">Substance Abuse Prevention</string>
+    <string name="substanceAbuseDesc">resources to help prevent substance abuse and to help people find the services they need to begin a path to recovery.</string>
+    <string name="substanceAbuseLink">https://ulstercountyny.gov/health/substance-abuse-prevention-and-recovery</string>
+    <string name="substanceAbusePhone"/>
+    <string name="substanceAbuseEmail"/>
+    <string-array name="substanceAbuseList">
+        <item>@string/substanceAbuseTitle</item>
+        <item>@string/substanceAbuseDesc</item>
+        <item>@string/substanceAbuseLink</item>
+        <item>@string/substanceAbusePhone</item>
+        <item>@string/substanceAbuseEmail</item>
+    </string-array>
+
+    <string name="UCCOCTitle">Ulster County Chamber of Commerce</string>
+    <string name="UCCOCDesc">The region’s leading business advocacy organization providing opportunities and resources to help business grow.</string>
+    <string name="UCCOCLink">https://www.ulsterchamber.org/</string>
+    <string name="UCCOCPhone"/>
+    <string name="UCCOCEmail"/>
+    <string-array name="UCCOCList">
+        <item>@string/UCCOCTitle</item>
+        <item>@string/UCCOCDesc</item>
+        <item>@string/UCCOCLink</item>
+        <item>@string/UCCOCPhone</item>
+        <item>@string/UCCOCEmail</item>
+    </string-array>
+
+    <string name="NPCOCTitle">New Paltz Chamber of Commerce</string>
+    <string name="NPCOCDesc">Making the region\'s businesses stronger and on fostering an environment where businesses can prosper.</string>
+    <string name="NPCOCLink">https://www.newpaltzchamber.org/</string>
+    <string name="NPCOCPhone"/>
+    <string name="NPCOCEmail"/>
+    <string-array name="NPCOCList">
+        <item>@string/NPCOCTitle</item>
+        <item>@string/NPCOCDesc</item>
+        <item>@string/NPCOCLink</item>
+        <item>@string/NPCOCPhone</item>
+        <item>@string/NPCOCEmail</item>
+    </string-array>
+
+    <string name="UCMentalHealthTitle">Mental Health Association of Ulster County </string>
+    <string name="UCMentalHealthDesc">Needed mental health services for children, adults, and families</string>
+    <string name="UCMentalHealthLink">https://www.mhainulster.com/</string>
+    <string name="UCMentalHealthPhone"/>
+    <string name="UCMentalHealthEmail"/>
+    <string-array name="UCMentalHealthList">
+        <item>@string/UCMentalHealthTitle</item>
+        <item>@string/UCMentalHealthDesc</item>
+        <item>@string/UCMentalHealthLink</item>
+        <item>@string/UCMentalHealthPhone</item>
+        <item>@string/UCMentalHealthEmail</item>
+    </string-array>
+
+    <string name="RCALTitle">Resource Center for Accessible Living</string>
+    <string name="RCALDesc">We advocate for people with any type of disability of any age and economic status to help dispel fears, myths and misconceptions, foster positive attitudes and promote easier integration in all aspects of our community.</string>
+    <string name="RCALLink">https://rcal.org/</string>
+    <string name="RCALPhone"/>
+    <string name="RCALEmail"/>
+    <string-array name="RCALList">
+        <item>@string/RCALTitle</item>
+        <item>@string/RCALDesc</item>
+        <item>@string/RCALLink</item>
+        <item>@string/RCALPhone</item>
+        <item>@string/RCALEmail</item>
+    </string-array>
+
+    <array name="communityResourcesArrayArray">
+        <item>@array/UCOFAList</item>
+        <item>@array/RUPCOList</item>
+        <item>@array/careerCenterList</item>
+        <item>@array/ssList</item>
+        <item>@array/UCHealthList</item>
+        <item>@array/preventionList</item>
+        <item>@array/UCCOCList</item>
+        <item>@array/NPCOCList</item>
+        <item>@array/UCMentalHealthList</item>
+        <item>@array/RCALList</item>
+    </array>
+
+
+    <!--Student Support -->
+
+    <string name="capsTitle">CAPS - Center for Academic Planning &amp; Support</string>
+    <string name="capsDesc">Provides a variety of academic support services to help enhance your college success including tutoring, workshops on improving learning and work skills.  Computers, WIFI access, and a study area is available.</string>
+    <string name="capsLink">https://www.sunyulster.edu/student_handbook/learning_center.php</string>
+    <string name="capsPhone" />
+    <string name="capsEmail" />
+    <string-array name="capsList">
+        <item>@string/capsTitle</item>
+        <item>@string/capsDesc</item>
+        <item>@string/capsLink</item>
+        <item>@string/capsPhone</item>
+        <item>@string/capsEmail</item>
+    </string-array>
+
+    <string name="careerTitle">Career Services</string>
+    <string name="careerDesc">Provides assistance to students and alumni in making informed career decisions and in conducting a job search. </string>
+    <string name="careerLink">https://www.sunyulster.edu/admissions/career_transfer_planning.php </string>
+    <string name="careerPhone">845–687–5091</string>
+    <string name="careerEmail" />
+    <string-array name="careerList">
+        <item>@string/careerTitle</item>
+        <item>@string/careerDesc</item>
+        <item>@string/careerLink</item>
+        <item>@string/careerPhone</item>
+        <item>@string/careerEmail</item>
+    </string-array>
+
+    <string name="counselTitle">Counselling - Personal</string>
+    <string name="counselDesc">Get help from short-term counseling for issues involving mental health, alcohol or substance abuse, careers, and life skills</string>
+    <string name="counselLink">https://www.sunyulster.edu/student_handbook/counseling.php</string>
+    <string name="counselPhone"/>
+    <string name="counselEmail" />
+    <string-array name="counselList">
+        <item>@string/counselTitle</item>
+        <item>@string/counselDesc</item>
+        <item>@string/counselLink</item>
+        <item>@string/counselPhone</item>
+        <item>@string/counselEmail</item>
+    </string-array>
+
 
     <string name="disabilityTitle">Disabilities Office</string>
-    <string name="disabilityDesc">Students with disabilities can come here to discuss their needs and accommodations that must be made in advance.\nVAN 101</string>
-    <string name="disabilityLink" tools:ignore="Typos">https://www.sunyulster.edu/student_handbook/accomodations.php</string>
+    <string name="disabilityDesc">For those with special needs, the disabilities office can provide accommodations.\nVAN 101</string>
+    <string name="disabilityLink">https://www.sunyulster.edu/student_handbook/accomodations.php</string>
     <string name="disabilityPhone">845–687–5121</string>
     <string name="disabilityEmail" />
     <string-array name="disabilityList">
@@ -475,64 +691,67 @@ UPDATE: Are phone numbers and emails accurate? function to pull in alphabetical 
         <item>@string/disabilityEmail</item>
     </string-array>
 
-    <string name="trioTitle">TRIO/Student Support Services</string>
-    <string name="trioDesc">Any Military member past or present may qualify for special help based on their service history. Every returning vet needs a custom plan to succeed, get that here.</string>
-    <string name="trioLink">https://www.sunyulster.edu/student_handbook/veterans_affairs.php</string>
-    <string name="trioPhone">845–688–6003</string>
-    <string name="trioEmail" />
-    <string-array name="trioList">
-        <item>@string/trioTitle</item>
-		<item>@string/trioDesc</item>
-    	<item>@string/trioLink</item>
-    	<item>@string/trioPhone</item>
-    	<item>@string/trioEmail</item>
+    <string name="EOPTitle">EOP</string>
+    <string name="EOPDesc">The Educational Opportunity Program provides academic support and financial aid to students who show promise for mastering college-level work.</string>
+    <string name="EOPLink">https://www.sunyulster.edu/admissions/educational-opportunity-program/#top</string>
+    <string name="EOPPhone"/>
+    <string name="EOPEmail" />
+    <string-array name="EOPList">
+        <item>@string/EOPTitle</item>
+        <item>@string/EOPDesc</item>
+        <item>@string/EOPLink</item>
+        <item>@string/EOPPhone</item>
+        <item>@string/EOPEmail</item>
     </string-array>
 
-    <string name="careerTitle">Career Services</string>
-    <string name="careerDesc">Get help with the life-long process of career development from trained counselors who can help you with everything from choosing a major that leads to the career you want, to conducting a job search to find employment in your chosen field.\nVAN 119</string>
-    <string name="careerLink">https://www.sunyulster.edu/admissions/career_transfer_planning.php</string>
-    <string name="careerPhone">845–687–5091</string>
-	<string name="careerEmail" />
-	<string-array name="careerList">
-		<item>@string/careerTitle</item>
-		<item>@string/careerDesc</item>
-		<item>@string/careerLink</item>
-		<item>@string/careerPhone</item>
-		<item>@string/careerEmail</item>
+    <string name="safeTitle">Safe Space</string>
+    <string name="safeDesc">Our academic community values and respects diversity among our students, faculty, and staff who are committed to fostering an academic environment where there is zero tolerance for any and all forms of homophobia and everyone is free to express emotional and sexual preferences.</string>
+    <string name="safeLink">https://www.sunyulster.edu/campus_and_culture/campus_resources/safe_space</string>
+    <string name="safePhone"/>
+    <string name="safeEmail" />
+    <string-array name="safeList">
+        <item>@string/safeTitle</item>
+		<item>@string/safeDesc</item>
+    	<item>@string/safeLink</item>
+    	<item>@string/safePhone</item>
+    	<item>@string/safeEmail</item>
+    </string-array>
+
+    <string name="handbookTitle">Student Handbook</string>
+    <string name="handbookDesc">The Student Handbook contains all policies students must abide by and services to take advantage of as a student</string>
+    <string name="handbookLink">https://www.sunyulster.edu/student_handbook/</string>
+    <string name="handbookPhone" />
+    <string name="handbookEmail" />
+    <string-array name="handbookList">
+        <item>@string/handbookTitle</item>
+        <item>@string/handbookDesc</item>
+        <item>@string/handbookLink</item>
+        <item>@string/handbookPhone</item>
+        <item>@string/handbookEmail</item>
+    </string-array>
+
+    <string name="trioTitle">TRIO/Student Support Services</string>
+    <string name="trioDesc">Provides academic, personal, financial, disability and transfer support for those who are  from a low income background, first generation college student, or possessing a documented disability.</string>
+    <string name="trioLink">https://www.sunyulster.edu/student_handbook/trio.php</string>
+	<string name="trioPhone" />
+	<string name="trioEmail" />
+	<string-array name="trioList">
+		<item>@string/trioTitle</item>
+		<item>@string/trioDesc</item>
+		<item>@string/trioLink</item>
+		<item>@string/trioPhone</item>
+		<item>@string/trioEmail</item>
 	</string-array>
 
-    <string name="learningTitle">Learning Center</string>
-    <string name="learningDesc">Your spot for a variety of academic support services to help enhance your college success, complete with computers, WIFI access and a study area available\nVAN 247</string>
-    <string name="learningLink">https://www.sunyulster.edu/student_handbook/learning_center.php</string>
-    <string name="learningPhone">845–687–5039</string>
-	<string name="learningEmail" />
-	<string-array name="learningList">
-		<item>@string/learningTitle</item>
-		<item>@string/learningDesc</item>
-		<item>@string/learningLink</item>
-		<item>@string/learningPhone</item>
-		<item>@string/learningEmail</item>
-	</string-array>
-
-    <string name="openLabsTitle">Open Labs Guide</string>
-    <string name="openLabsDesc">There is a place to work and study all week, every week at SUNY Ulster. Find out where here.</string>
-    <string name="openLabsLink">https://www.sunyulster.edu/campus_and_culture/campus_resources/technology</string>
-	<string name="openLabsPhone" />
-	<string name="openLabsEmail" />
-	<string-array name="openLabsList">
-		<item>@string/openLabsTitle</item>
-		<item>@string/openLabsDesc</item>
-		<item>@string/openLabsLink</item>
-		<item>@string/openLabsPhone</item>
-		<item>@string/openLabsEmail</item>
-	</string-array>
-
-    <array name="officesArrayArray">
+    <array name="studentSupportArrayArray">
+        <item>@array/capsList</item>
+        <item>@array/counselList</item>
         <item>@array/disabilityList</item>
+        <item>@array/EOPList</item>
+        <item>@array/safeList</item>
+        <item>@array/handbookList</item>
         <item>@array/trioList</item>
-        <item>@array/careerList</item>
-        <item>@array/learningList</item>
-        <item>@array/openLabsList</item>
+
     </array>
 
     <!--Library Tools-->
@@ -616,10 +835,23 @@ UPDATE: Are phone numbers and emails accurate? function to pull in alphabetical 
         <item>@array/buildingHistoryList</item>
     </array>
 
-    <!--Student Life Info-->
-    <string name="advisorTitle">Advisors</string>
-    <string name="advisorDesc">Who is your advisor? Find out here!</string>
-	<string name="advisorLink" />
+    <!--Academic Resources Info-->
+    <string name="calendarTitle"> Academic Calendar</string>
+    <string name="calendarDesc">Stay up-to-date on all academic deadlines</string>
+    <string name="calendarLink">https://www.sunyulster.edu/academic-calendar</string>
+    <string name="calendarPhone" />
+    <string name="calendarEmail" />
+    <string-array name="calendarList">
+        <item>@string/calendarTitle</item>
+        <item>@string/calendarDesc</item>
+        <item>@string/calendarLink</item>
+        <item>@string/calendarPhone</item>
+        <item>@string/calendarEmail</item>
+    </string-array>
+
+    <string name="advisorTitle">Advisor Lookup</string>
+    <string name="advisorDesc">Advisors are your ally when it comes to student success. Get advice, choose a program, register for classes, and more.</string>
+    <string name="advisorLink">https://gofar.sunyulster.edu/student_resources/</string>
 	<string name="advisorPhone" />
 	<string name="advisorEmail" />
 	<string-array name="advisorList">
@@ -630,64 +862,135 @@ UPDATE: Are phone numbers and emails accurate? function to pull in alphabetical 
 		<item>@string/advisorEmail</item>
 	</string-array>
 
-    <string name="calendarTitle">Calendar</string>
-    <string name="calendarDesc">Make appointments, schedule meetings, set up reminders to study or to leave early for a test. Use this tool as your personal planner for all things SUNY Ulster.</string>
-	<string name="calendarLink" />
-	<string name="calendarPhone" />
-	<string name="calendarEmail" />
-	<string-array name="calendarList">
-		<item>@string/calendarTitle</item>
-		<item>@string/calendarDesc</item>
-		<item>@string/calendarLink</item>
-		<item>@string/calendarPhone</item>
-		<item>@string/calendarEmail</item>
+    <string name="careerConnectionTitle">Career Connection</string>
+    <string name="careerConnectionDesc">General guide to the most common career paths of where majors at SUNY Ulster can lead.</string>
+    <string name="careerConnectionLink">https://www.sunyulster.edu/academics/career_connection.php</string>
+    <string name="careerConnectionPhone" />
+    <string name="careerConnectionEmail" />
+    <string-array name="careerConnectionList">
+        <item>@string/careerConnectionTitle</item>
+        <item>@string/careerConnectionDesc</item>
+        <item>@string/careerConnectionLink</item>
+        <item>@string/careerConnectionPhone</item>
+        <item>@string/careerConnectionEmail</item>
+    </string-array>
+
+    <string name="coilTitle">COIL - Study with students abroad through technology</string>
+    <string name="coilDesc">COIL allows students to work with counterparts across the world on a number of subjects through technological resources.</string>
+    <string name="coilLink">https://www.sunyulster.edu/academics/going_global/coil.php</string>
+    <string name="coilPhone" />
+    <string name="coilEmail" />
+    <string-array name="coilList">
+        <item>@string/coilTitle</item>
+        <item>@string/coilDesc</item>
+        <item>@string/coilLink</item>
+        <item>@string/coilPhone</item>
+        <item>@string/coilEmail</item>
+    </string-array>
+
+    <string name="catalogTitle">College Catalog</string>
+    <string name="catalogDesc">Everything SUNY Ulster in one place.  Find program curriculum, department personnel, and more.</string>
+    <string name="catalogLink">http://catalog.sunyulster.edu/ </string>
+    <string name="catalogPhone" />
+    <string name="catalogEmail" />
+    <string-array name="catalogList">
+        <item>@string/catalogTitle</item>
+        <item>@string/catalogDesc</item>
+        <item>@string/catalogLink</item>
+        <item>@string/catalogPhone</item>
+        <item>@string/catalogEmail</item>
+    </string-array>
+
+    <string name="courseTitle">Course Search</string>
+    <string name="courseDesc">Search for specific courses for current and future semesters.</string>
+    <string name="courseLink">https://apps.sunyulster.edu/courses/</string>
+    <string name="coursePhone" />
+    <string name="courseEmail" />
+    <string-array name="courseList">
+        <item>@string/courseTitle</item>
+        <item>@string/courseDesc</item>
+        <item>@string/courseLink</item>
+        <item>@string/coursePhone</item>
+        <item>@string/courseEmail</item>
+    </string-array>
+
+    <string name="degreeWorksTitle">DegreeWorks</string>
+    <string name="degreeWorksDesc">Take a look at the major you are enrolled in with the college and see how many classes you’ve taken and have yet to take before you graduate.</string>
+    <string name="degreeWorksLink">https://uls.degreeworks.suny.edu</string>
+    <string name="degreeWorksPhone"/>
+    <string name="degreeWorksEmail"/>
+    <string-array name="degreeWorksList">
+        <item>@string/degreeWorksTitle</item>
+        <item>@string/degreeWorksDesc</item>
+        <item>@string/degreeWorksLink</item>
+        <item>@string/degreeWorksPhone</item>
+        <item>@string/degreeWorksEmail</item>
+    </string-array>
+
+    <string name="facultyTitle">Faculty Directory</string>
+    <string name="facultyDesc">Look up contact information for any faculty member.</string>
+    <string name="facultyLink">https://apps.sunyulster.edu/directory/faculty/</string>
+    <string name="facultyPhone" />
+    <string name="facultyEmail" />
+    <string-array name="facultyList">
+        <item>@string/facultyTitle</item>
+        <item>@string/facultyDesc</item>
+        <item>@string/facultyLink</item>
+        <item>@string/facultyPhone</item>
+        <item>@string/facultyEmail</item>
+    </string-array>
+
+    <string name="freshStartTitle">Fresh start</string>
+    <string name="freshStartDesc">Apply for the chance to start over at SUNY Ulster after a hiatus from the college (2yr+) with a new GPA.</string>
+    <string name="freshStartLink">https://www.sunyulster.edu/admissions/info/fresh_start_policy.php</string>
+	<string name="freshStartPhone" />
+	<string name="freshStartEmail" />
+	<string-array name="freshStartList">
+		<item>@string/freshStartTitle</item>
+		<item>@string/freshStartDesc</item>
+		<item>@string/freshStartLink</item>
+		<item>@string/freshStartPhone</item>
+		<item>@string/freshStartEmail</item>
 	</string-array>
 
-    <string name="handbookTitle">Student Handbook</string>
-    <string name="handbookDesc">Part of keeping SUNY Ulster a place where everyone feels safe and welcome requires your help and participation in all the guidelines found here. Take a gander.</string>
-    <string name="handbookLink">https://www.sunyulster.edu/student_handbook/</string>
-	<string name="handbookPhone" />
-	<string name="handbookEmail" />
-	<string-array name="handbookList">
-		<item>@string/handbookTitle</item>
-		<item>@string/handbookDesc</item>
-		<item>@string/handbookLink</item>
-		<item>@string/handbookPhone</item>
-		<item>@string/handbookEmail</item>
-	</string-array>
+    <string name="learningSpecialistTitle">Learning Strategy Specialist</string>
+    <string name="learningSpecialistDesc">Learn time management and study skills, including instruction in memorization techniques, note taking, test taking, and reading comprehension. Get help studying or overcoming math and/or test anxiety. </string>
+    <string name="learningSpecialistLink">https://www.sunyulster.edu/academics/caps/caps-services.php</string>
+    <string name="learningSpecialistPhone" />
+    <string name="learningSpecialistEmail" />
+    <string-array name="learningSpecialList">
+        <item>@string/learningSpecialistTitle</item>
+        <item>@string/learningSpecialistDesc</item>
+        <item>@string/learningSpecialistLink</item>
+        <item>@string/learningSpecialistPhone</item>
+        <item>@string/learningSpecialistEmail</item>
+    </string-array>
 
-    <string name="campusNewsTitle">Campus News and Alerts</string>
-    <string name="campusNewsDesc">Check out what’s happening this week, see any holiday schedule changes and check for any cancellation/delays.</string>
-    <string name="campusNewsLink">https://www.sunyulster.edu/campus_and_culture/safety_security/weather</string>
-	<string name="campusNewsPhone" />
-	<string name="campusNewsEmail" />
-	<string-array name="campusNewsList">
-		<item>@string/campusNewsTitle</item>
-		<item>@string/campusNewsDesc</item>
-		<item>@string/campusNewsLink</item>
-		<item>@string/campusNewsPhone</item>
-		<item>@string/campusNewsEmail</item>
-	</string-array>
+    <string name="transferTitle">Learning Strategy Specialist</string>
+    <string name="transferDesc">Learn time management and study skills, including instruction in memorization techniques, note taking, test taking, and reading comprehension. Get help studying or overcoming math and/or test anxiety. </string>
+    <string name="transferLink">https://www.sunyulster.edu/academics/caps/caps-services.php</string>
+    <string name="transferPhone" />
+    <string name="transferEmail" />
+    <string-array name="transferList">
+        <item>@string/transferTitle</item>
+        <item>@string/transferDesc</item>
+        <item>@string/transferLink</item>
+        <item>@string/transferPhone</item>
+        <item>@string/transferEmail</item>
+    </string-array>
 
-    <string name="majorTitle">My Major and Requirements</string>
-    <string name="majorDesc">Take a look at the major you are enrolled in with the college and see how many classes you’ve taken and have yet to take before you graduate.</string>
-    <string name="majorLink">https://uls.degreeworks.suny.edu</string>
-	<string name="majorPhone" />
-	<string name="majorEmail" />
-	<string-array name="majorList">
-		<item>@string/majorTitle</item>
-		<item>@string/majorDesc</item>
-		<item>@string/majorLink</item>
-		<item>@string/majorPhone</item>
-		<item>@string/majorEmail</item>
-	</string-array>
 
-    <array name="studentLifeArrayArray">
+    <array name="academicResourcesArrayArray">
         <item>@array/advisorList</item>
-        <item>@array/calendarList</item>
-        <item>@array/handbookList</item>
-        <item>@array/campusNewsList</item>
-        <item>@array/majorList</item>
+        <item>@array/careerConnectionList</item>
+        <item>@array/coilList</item>
+        <item>@array/catalogList</item>
+        <item>@array/courseList</item>
+        <item>@array/degreeWorksList</item>
+        <item>@array/facultyList</item>
+        <item>@array/freshStartList</item>
+        <item>@array/learningSpecialList</item>
+        <item>@array/transferList</item>
     </array>
 
     <!--Transportation Info-->

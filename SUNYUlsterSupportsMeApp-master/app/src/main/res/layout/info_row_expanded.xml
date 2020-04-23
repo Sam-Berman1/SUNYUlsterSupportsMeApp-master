@@ -19,6 +19,8 @@
             android:layout_marginTop="8dp"
             android:gravity="center_vertical|start"
             android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

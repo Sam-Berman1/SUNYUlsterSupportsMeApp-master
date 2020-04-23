@@ -78,7 +78,5 @@ class ExpandableDetailViewHolder extends ChildViewHolder
         } else {
             phoneButton.setVisibility(View.INVISIBLE);
         }
-
     }
-
 }

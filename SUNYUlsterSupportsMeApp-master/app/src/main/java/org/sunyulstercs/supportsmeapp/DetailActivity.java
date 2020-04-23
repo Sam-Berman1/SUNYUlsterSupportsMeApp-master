@@ -111,6 +111,8 @@ public class DetailActivity extends AppCompatActivity
             departmentBanner.setImageDrawable(departmentBanner.getContext().getDrawable(info.getBannerID()));
         }
 
+
+
     }
 
 }

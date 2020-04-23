@@ -1,9 +1,11 @@
 package org.sunyulstercs.supportsmeapp;
 
 import android.content.Intent;
+import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 
 /**
  * @authors
@@ -18,6 +20,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.home_screen);
+
 	}
 
 	@Override
@@ -48,13 +51,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 				break;
 
 			case R.id.studentLifeButton:
-				intent.putExtra("CategoryData", R.array.campusLifeArrayArray);
+				intent.putExtra("CategoryData", R.array.studentLifeArrayArray);
 				intent.putExtra("CategoryImage", R.drawable.student_life_icon);
 				intent.putExtra("ActivityName", getResources().getString(R.string.campusLifeButtonDesc));
 				break;
 
 			case R.id.communityResourcesButton :
-				intent.putExtra("CategoryData", R.array.officesArrayArray);
+				intent.putExtra("CategoryData", R.array.communityResourcesArrayArray);
 				intent.putExtra("CategoryImage", R.drawable.community_resources_icon);
 				intent.putExtra("ActivityName", getResources().getString(R.string.communityResourceButtonDesc));
 				break;
@@ -66,15 +69,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 				break;
 
 			case R.id.studentSupportButton :
-				intent.putExtra("CategoryData", R.array.studentLifeArrayArray);
+				intent.putExtra("CategoryData", R.array.studentSupportArrayArray);
 				intent.putExtra("CategoryImage", R.drawable.student_support_icon);
-				intent.putExtra("ActivityName", getResources().getString(R.string.financialAidDesc));
+				intent.putExtra("ActivityName", getResources().getString(R.string.studentSupportButtonDesc));
 				break;
 
 			case R.id.academicResourcesButton :
-				intent.putExtra("CategoryData", R.array.scheduleInfoArrayArray);
+				intent.putExtra("CategoryData", R.array.academicResourcesArrayArray);
 				intent.putExtra("CategoryImage", R.drawable.academic_resources_icon);
-				intent.putExtra("ActivityName", getResources().getString(R.string.libraryButtonDesc));
+				intent.putExtra("ActivityName", getResources().getString(R.string.academicResourcesButtonDesc));
 				break;
 
 			case R.id.transportationButton :
@@ -85,5 +88,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 		}
 		intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT); //If activity is in the stack somewhere, reuse it.
 		startActivity(intent);
+
+
+
+
 	}
 }
