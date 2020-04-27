@@ -16,13 +16,13 @@
 
         <TextView
             android:id="@+id/info_title"
-            android:layout_width="415dp"
-            android:layout_height="40sp"
-            android:textSize="20sp"
-            android:textColor="@color/colorWhite"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             android:gravity="center_vertical|start"
             android:textAlignment="gravity"
             android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"

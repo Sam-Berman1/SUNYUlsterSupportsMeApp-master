@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+// would be awesome to incorporate blackboard here
 public class CalendarMain extends AppCompatActivity {
 
     private static final String TAG = "Main Activity";

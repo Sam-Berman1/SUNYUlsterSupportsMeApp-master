@@ -4,21 +4,25 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.constraint.ConstraintLayout;
+import android.support.constraint.ConstraintSet;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.thoughtbot.expandablerecyclerview.listeners.GroupExpandCollapseListener;
 import com.thoughtbot.expandablerecyclerview.models.ExpandableGroup;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author Ethan Smith ethansmitty@gmail.com
+ * @author Ethan Smith & Sam Berman
  * @since 03/04/2019
  */
 public class InfoActivity extends AppCompatActivity
@@ -26,6 +30,12 @@ public class InfoActivity extends AppCompatActivity
 
     private Bundle extras;
     RecyclerView recyclerView;
+    private ImageView banner;
+    private ConstraintLayout layout;
+    private int expandedItems = 0;
+    private TextView categoryLabel;
+    private ImageView categoryImage;
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -33,9 +43,11 @@ public class InfoActivity extends AppCompatActivity
 
         //Set up views
         setContentView(R.layout.activity_info);
-        TextView categoryLabel = findViewById(R.id.categoryLabel);
-        ImageView categoryImage = findViewById(R.id.department_icon);
+        categoryLabel = findViewById(R.id.categoryLabel);
+        categoryImage = findViewById(R.id.department_icon);
+        banner = findViewById(R.id.BannerPlaceHolder);
         recyclerView = findViewById(R.id.info_list_view);
+        layout = findViewById(R.id.coordinatorLayout);
 
         //Set up expandable recyclerview
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
@@ -51,6 +63,37 @@ public class InfoActivity extends AppCompatActivity
         {
             categoryImage.setImageDrawable(ContextCompat.getDrawable(getApplicationContext(), extras.getInt("CategoryImage"))); //set image view
         }
+        // expand and collapse for level 2 list
+        // sets new constraints & toggles banner and icon visibility
+        adapter.setOnGroupExpandCollapseListener(new GroupExpandCollapseListener() {
+            @Override
+            public void onGroupExpanded(ExpandableGroup group) {
+                ConstraintSet constraintSet = new ConstraintSet();
+                constraintSet.clone(layout);
+                constraintSet.connect(R.id.info_list_view, ConstraintSet.TOP, R.id.banner_image_view, ConstraintSet.BOTTOM, 8);
+                constraintSet.applyTo(layout);
+
+                banner.setVisibility(View.GONE);
+                categoryImage.setVisibility(View.GONE);
+                categoryLabel.setVisibility(View.GONE);
+                expandedItems++;
+            }
+
+            @Override
+            public void onGroupCollapsed(ExpandableGroup group) {
+                expandedItems--;
+                if (expandedItems < 1) {
+                    banner.setVisibility(View.VISIBLE);
+                    categoryImage.setVisibility(View.VISIBLE);
+                    categoryLabel.setVisibility(View.VISIBLE);
+
+                    ConstraintSet constraintSet = new ConstraintSet();
+                    constraintSet.clone(layout);
+                    constraintSet.connect(R.id.info_list_view, ConstraintSet.TOP, R.id.categoryLabel, ConstraintSet.BOTTOM, 0);
+                    constraintSet.applyTo(layout);
+                }
+            }
+        });
     }
 
     /**

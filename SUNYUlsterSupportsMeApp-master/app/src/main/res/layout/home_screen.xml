@@ -12,7 +12,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="@android:color/transparent"
@@ -21,15 +20,14 @@
         app:layout_constraintBottom_toTopOf="@+id/communityResourcesButton"
         app:layout_constraintEnd_toStartOf="@+id/communityResourcesButton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.75"
-        app:srcCompat="@drawable/campus_resources_icon"/>
+        app:layout_constraintTop_toTopOf="@+id/academicResourcesButton"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/campus_resources_icon" />
 
     <TextView
         android:id="@+id/campusResourceLabel"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginBottom="32dp"
+        android:layout_height="wrap_content"
         android:text="@string/campusResourcesButtonDesc"
         android:textAlignment="center"
         android:textAllCaps="false"
@@ -56,10 +54,10 @@
         android:onClick="onClick"
         app:layout_constraintBottom_toTopOf="@+id/communityResourcesButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.75"
+        app:layout_constraintVertical_bias="0.73"
         app:srcCompat="@drawable/academic_resources_icon" />
 
     <TextView
@@ -112,16 +110,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="@android:color/transparent"
         android:contentDescription="@string/campusLifeButtonDesc"
         android:onClick="onClick"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/communityResourcesButton"
         app:layout_constraintEnd_toStartOf="@+id/communityResourcesButton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/communityResourcesButton"
+        app:layout_constraintVertical_bias="0.01999998"
         app:srcCompat="@drawable/student_life_icon" />
 
     <TextView
@@ -153,6 +151,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.52"
         app:srcCompat="@drawable/community_resources_icon" />
 
     <TextView
@@ -213,7 +212,7 @@
         app:layout_constraintEnd_toStartOf="@+id/communityResourcesButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/communityResourcesButton"
-        app:layout_constraintVertical_bias="0.256"
+        app:layout_constraintVertical_bias="0.32999998"
         app:srcCompat="@drawable/financial_icon" />
 
     <TextView
@@ -265,19 +264,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="@android:color/transparent"
         android:contentDescription="@string/socialMediaButtonDesc"
         android:onClick="onClick"
         android:scaleType="centerInside"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/financialButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.703"
         app:layout_constraintStart_toEndOf="@+id/communityResourcesButton"
-        app:layout_constraintTop_toBottomOf="@+id/communityResourcesLabel"
-        app:layout_constraintVertical_bias="0.136"
+        app:layout_constraintTop_toTopOf="@+id/financialButton"
+        app:layout_constraintVertical_bias="0.57"
         app:srcCompat="@drawable/web_social_icon" />
 
     <TextView
@@ -297,14 +295,14 @@
     <ImageView
         android:id="@+id/banner_image_view"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="100dp"
         android:contentDescription="@string/homeScreenBannerDesc"
         app:layout_constraintBottom_toTopOf="@+id/academicResourcesButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.545"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ic_yellowbannerwithtext" />
 
     <fragment
@@ -315,8 +313,10 @@
         android:layout_marginTop="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/libraryResourcesLabel"
+        app:layout_constraintVertical_bias="0.728"
         tools:layout="@layout/fragment_nav" />
 
 </android.support.constraint.ConstraintLayout>
