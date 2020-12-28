@@ -2,7 +2,7 @@
   <h3> My Role: </h3>
  <p> Scrum Master, Lead Android Developer, & UI/UX designer on Team Cesar++ </p>
   <h3> About: </h3>
-  <p> SUNYUlsterSupports.Me was started in 2019. The project is intended to be a new section for the College’s website with a corresponding mobile app. The app is meant to provide students with friendly help familiarizing themselves with the campus, finding the support services they need, and the general when, where, and what is happening on campus.</p>
+  <p> SUNYUlsterSupports.Me was started in 2019. The project is intended to be an addition to the SUNY Ulster website with an corresponding mobile app. The app is meant to provide students with user friendly help with familiarizing themselves with campus, finding the support services they need, and the general when, where, and what is happening on campus.</p>
  <h3>Usage:</h3>
  <h4>Import to Android Studio Instructions</h4>
  File -> New -> Project from Version Control -> GitHub. Then enter your github username and password. Select the repository and hit clone.
